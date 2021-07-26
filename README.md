@@ -1,104 +1,295 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+____________README.md -mall______________
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
+# Meow Sweden
+### Handmade accessories and jewelry with cattitude =^.^=
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+![Responsive Image](assets/images/responsive-image.png)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Project Goals
+**What is it?** 
+Text
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**Who is it for?**
+Text
 
-A blue button should appear to click: _Make Public_,
+**Why am I building it?**
+Text
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Table of Content
 
-To log into the Heroku toolbelt CLI:
+* [**UX**](#ux)
+    * [User Goals](#user-goals)
+    * [User Stories](#user-stories)
+    * [Site Owner Goals](#site-owner-goals)
+    * [Design](#design) 
+* [**Wireframes**](#wireframes)
+* [**Features**](#features)
+* [**Technologies Used**](#technologies-used)
+    * [Languages](#languages)
+    * [Frameworks Libraries Programs](#frameworks-libraries-programs)
+* [**Testing**](#testing)
+    * [Bugs](#bugs)
+    * [To Do](#to-do)
+* [**Deployment**](#deployment)
+    * [GitHub Pages](#gitHub-pages)
+* [**Credits**](#credits)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## UX
 
-------
+### User Goals
+* Text
+* Text
+* Text
 
-## Release History
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* As a user I want to, 
+* As a user I want to, 
+* As a user I want to, 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Site Owner Goals
+* Text
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Design
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Fonts:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+I used fonts from [Google Fonts](https://fonts.google.com/)
+* [Fontname]
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Images:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Text about image source
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### Color: 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+I wanted to use colors that match the moon background image.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Color palette](assets/images/color-palette.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[Back to top](#table-of-content)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Wireframes
+Balsamiq was used to create the wireframes for this project
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Desktop Wireframes
+    * [Index](wireframes/index.png)
+    * [ ]( )
+    
+* Tablet Wireframes
+    * [Index](wireframes/index-tablet.png)
+    * [ ]( )
 
-------
+* Smartphone Wireframes 
+    * [Index](wireframes/index-sp.png)
+    * [ ]( )
 
-## FAQ about the uptime script
+[Back to top](#table-of-content)
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Features
+* Responsive on different devices
+* 
+* 
 
-**How will this affect me?**
+[Back to top](#table-of-content)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Technologies Used
+### Languages
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Frameworks and Libraries 
+* [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
+in the project
+??* [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
+palette
+* [Am I Responsive](http://ami.responsivedesign.is/) was used to make the mockup
+??* [Boostrap](https://getbootstrap.com/) was used to make the site responsive
 
-**So….?**
+### Tools
+* [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
+the project
+* [Material.io](https://material.io/) was used to check that the contrast is ok
+??* [Gimp](https://www.gimp.org/) was used to edit photos.
+* [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
+* [Webformatter](https://webformatter.com/html) was used to beautify the code
+??* [Copressor.io](https://compressor.io/) was used to compress the background image
+* [Gitpod](https://gitpod.io/) was used for coding the project
+* [Github](https://github.com/) was used to save and stored on the project after being 
+pushed from Gitpod. Github was also use to deploy the site
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+[Back to top](#table-of-content)
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Testing
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+?? The was tested for Android on Samsung A50 and Xperia 10. It was also tested on laptop
+and desktop view (PC).
 
-**Anything more?**
+The code was tested with:
+* [W3C Markup Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [JSHint](https://jshint.com/)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+**Lighthouse**
 
----
+* Test 1
 
-Happy coding!
+![Lighthouse test 1](assets/images/lighthouse-test1.png)
+* Test 2
+
+![Lighthouse test 1](assets/images/lighthouse-test2.png)
+
+
+## User Stories
+**As a user I want to,  **
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+**As a user I want to,  **
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+**As a user I want to,  **
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+
+[Back to top](#table-of-content)
+
+
+## Bugs
+
+**Name of bug**
+* **Bug**
+
+Text
+
+* **Fix**
+
+Text
+
+* **Verdict**
+
+Text
+
+**Name of bug**
+* **Bug**
+
+Text
+
+* **Fix**
+
+Text
+
+* **Verdict**
+
+Text
+
+[Back to top](#table-of-content)
+
+
+## To Do
+* 
+* 
+* 
+
+[Back to top](#table-of-content)
+
+
+## Deployment
+### GitHub Pages
+How to deploy project using Github pages:
+
+1. Go to Github
+2. Log in and click on “Repositories” tab in the top middle of the screen
+3. Choose this repository
+4. Click on the "Settings" tab (with a gear icon)
+5. Scroll down on the page until you find the "Github Pages" section
+6. Under "Source" you'll find a dropdown which is set to "none"
+7. Change it to "Master"
+8. Then click the save button. This will reload the page.
+9. Scroll back down to "Github Pages"
+10. A green alert box will now tell you that your site been published and provide you a link to the site.
+
+![Deployment Image](assets/images/deployment.png)
+
+[Back to top](#table-of-content)
+
+## Credits
+#### Inspiration 
+* [ ]( )
+* [ ]( )
+
+* Thank you to
+* A huge thank you to my mentor Simen Eventyret_mentor for all the good advices, feedback 
+and most of all patience.
+* Thank you to my older brother David who’s been a wonderful support in me deepest times of 
+dispear and helped me with testing and good advices to help me get a better understanding for the code.
+You're the best!
+
+[Back to top](#table-of-content)
