@@ -51,9 +51,14 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 
 ### User Stories
 
-* As a user I want to, 
-* As a user I want to, 
-* As a user I want to, 
+* As a user I want to be able to browse through the products by category
+* As a user I want to be able to easily navigate the website
+* As a user I want to see images of the product
+* As a user I want to able to choose from a selection of colors when I buy some products 
+* As a user I want to create a customer profile 
+* As a user I want to be able to view my shopping bag with added products and/or edit/delete it
+* As a user I want to be able to pay for my order with a credit card
+* As a user I want to recive a confirmation email when I make an order
 
 ### Site Owner Goals
 * Text
