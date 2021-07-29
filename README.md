@@ -11,13 +11,13 @@ ____________README.md -mall______________
 
 ## Project Goals
 **What is it?** 
-Text
+Meow Sweden is a webshop that provides handmade fancy and luxurious cat ears for all crazy catladies with a sence of fashion. Here can the cat fashionista be sure to find sparkely cat ears in different colors and styles. There is also a jewelry section with necklaces made with ancient Quipu code.
 
 **Who is it for?**
-Text
+For any catlover, male or female (yes, men can be catladies too), that like to level up their outfit.
 
 **Why am I building it?**
-Text
+This project is actually why I got into coding. I started up Meow Sweden in spring 2019 and started selling my cat ears and necklaces on [Etsy](https://www.etsy.com/se-en/shop/MeowSweden?ref=seller-platform-mcnav). But I always felt like Meow Sweden should have its own homepage with it own webshop. And with this project I can finaly dive into how I would like it to be! And I can get full controll over all the design and all the functionallity.
 
 
 ## Table of Content
