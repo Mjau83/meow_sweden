@@ -17,7 +17,7 @@ Meow Sweden is a webshop that provides handmade fancy and luxurious cat ears for
 For any catlover, male or female (yes, men can be catladies too), that like to level up their outfit.
 
 **Why am I building it?**
-This project is actually why I got into coding. I started up Meow Sweden in spring 2019 and started selling my cat ears and necklaces on [Etsy](https://www.etsy.com/se-en/shop/MeowSweden?ref=seller-platform-mcnav). But I always felt like Meow Sweden should have its own homepage with it own webshop. And with this project I can finaly dive into how I would like it to be! And I can get full controll over all the design and all the functionallity.
+This project is actually why I got into coding. I started up Meow Sweden in spring 2019 and started selling my cat ears and necklaces on **[Etsy](https://www.etsy.com/se-en/shop/MeowSweden?ref=seller-platform-mcnav)**. But I always felt like Meow Sweden should have its own homepage with it own webshop. And with this project I can finaly dive into how I would like it to be! And I can get full controll over all the design and all the functionallity.
 
 
 ## Table of Content
@@ -43,9 +43,11 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 ## UX
 
 ### User Goals
-* Text
-* Text
-* Text
+* The website should be visually appeling 
+* The website should work well on all devices
+* The ladingpage should display some products making user motivated to continue browsing
+* The users should be able to make a purchase
+* The website should have some background informaion about the company
 
 ### User Stories
 
