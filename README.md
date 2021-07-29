@@ -56,12 +56,19 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 * As a user I want to see images of the product
 * As a user I want to able to choose from a selection of colors when I buy some products 
 * As a user I want to create a customer profile 
+* As a user I want to be able to log in to that profile, and log out
 * As a user I want to be able to view my shopping bag with added products and/or edit/delete it
 * As a user I want to be able to pay for my order with a credit card
 * As a user I want to recive a confirmation email when I make an order
 
 ### Site Owner Goals
-* Text
+* As a site owner I want to promomte my products to my users
+* As a site owner I want to be able to see all the orders
+* As a site owner I want to be able to see all registered users
+* As a site owner I be able to log in and out of the admin profile
+* As a site owner I want o be able to edit and delete products
+* As a site owner I want o be able to add new products to the webshop
+
 
 ### Design
 
