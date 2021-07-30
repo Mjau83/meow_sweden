@@ -53,7 +53,8 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 
 * As a user I want to be able to browse through the products by category
 * As a user I want to be able to easily navigate the website
-* As a user I want to see images of the product
+* As a user I want to be able to search for products
+* As a user I want to see images and information of the product
 * As a user I want to able to choose from a selection of colors when I buy some products 
 * As a user I want to create a customer profile 
 * As a user I want to be able to log in to that profile, and log out
