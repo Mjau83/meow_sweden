@@ -80,11 +80,11 @@ I used fonts from [Google Fonts](https://fonts.google.com/)
 
 #### Images:
 
-Text about image source
+All product images are me own and was photographed my me. Background images are from [Adobe](www.stock.adobe.com)
 
 #### Color: 
 
-I wanted to use colors that match the moon background image.
+I wanted to use colors that match background images and giving the website a luxurious feeling with some gold.
 
 ![Color palette](assets/images/color-palette.png)
 
@@ -95,16 +95,35 @@ I wanted to use colors that match the moon background image.
 Balsamiq was used to create the wireframes for this project
 
 * Desktop Wireframes
-    * [Index](wireframes/index.png)
-    * [ ]( )
+    * [HOME](wireframes/index.png)
+    * [Products]( )
+    * [Product Detail]( )
+    * [About]( )
+    * [Contact]( )
+    * [Profile]( )
+    * [Shopping Bag]( )
+    * [Checkout]( )
+
     
 * Tablet Wireframes
-    * [Index](wireframes/index-tablet.png)
-    * [ ]( )
+    * [HOME](wireframes/index-tablet.png)
+    * [Products]( )
+    * [Product Detail]( )
+    * [About]( )
+    * [Contact]( )
+    * [Profile]( )
+    * [Shopping Bag]( )
+    * [Checkout]( )
 
 * Smartphone Wireframes 
-    * [Index](wireframes/index-sp.png)
-    * [ ]( )
+    * [HOME](wireframes/index-sp.png)
+    * [Products]( )
+    * [Product Detail]( )
+    * [About]( )
+    * [Contact]( )
+    * [Profile]( )
+    * [Shopping Bag]( )
+    * [Checkout]( )
 
 [Back to top](#table-of-content)
 
@@ -122,18 +141,20 @@ Balsamiq was used to create the wireframes for this project
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
 
 ### Frameworks and Libraries 
 * [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
 in the project
-??* [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
+* [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
 palette
 * [Am I Responsive](http://ami.responsivedesign.is/) was used to make the mockup
-??* [Boostrap](https://getbootstrap.com/) was used to make the site responsive
+* [Boostrap](https://getbootstrap.com/) was used to make the site responsive
 
 ### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
 the project
+*[Draw.io](https://app.diagrams.net/) was used to make the flowchart
 * [Material.io](https://material.io/) was used to check that the contrast is ok
 ??* [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
