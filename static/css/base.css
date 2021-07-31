@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Raleway:wght@100;200&family=Roboto:wght@100;300&display=swap');
-
-html {
+/*html {
     height: 100%;
-}
+}*/
 
 #main-header {
     background: url('/media/backgroun-tiger-rose-dpink.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(40vh - 180px);
     color: #3b3b3b;
     font-family: 'Cormorant Garamond', serif;
 }
 
+#main-header a {
+    color: #3b3b3b;
+}
 #nav-header {
     background-color: #3b3b3b;
     color: #fde5dd;
@@ -29,10 +30,23 @@ html {
     width: fit-content;
 }
 
-.shop-now-button {
+/*.index-content {
+    padding-top: 150px;
+}*/
+
+#best-seller{
+    background: url('/media/background-tiger-grey-black.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(70vh - 180px);
+    color:#b4853e;
+    font-family: 'Raleway', sans-serif;
+}
+
+.best-seller-button {
     background: black;
-    color: white;
+    color: #f8e085;
     min-width: 260px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .btn-black {
@@ -40,14 +54,14 @@ html {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.best-seller-button:hover,
+.best-seller-button:active,
+.best-seller-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #b4853e;
 }
 
 .border-black {
@@ -74,6 +88,10 @@ html {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 180px;
+    }
+
+    .index-content {
+        padding-top: 55px;
     }
 }
