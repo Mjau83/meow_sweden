@@ -18,6 +18,11 @@
     color: #fde5dd;
 }
 
+#cat-logo{
+    height: 60px;
+    padding: 5px 0px 5px 0px;
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
