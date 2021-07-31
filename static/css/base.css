@@ -13,9 +13,27 @@
 #main-header a {
     color: #3b3b3b;
 }
+
+#main-nav,
 #nav-header {
     background-color: #3b3b3b;
     color: #fde5dd;
+}
+
+#main-nav a {
+    color: #fde5dd;
+}
+
+.dropdown-menu {
+    background-color: #000;
+}
+
+.dropdown-menu a{
+    color: #fde5dd;
+}
+
+.dropdown-menu a:hover {
+    background-color: #3b3b3b;
 }
 
 #cat-logo{

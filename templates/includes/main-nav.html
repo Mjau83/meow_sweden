@@ -1,14 +1,16 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <img src="/media/MS_cat_logo.jpg" id="cat-logo" alt="">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <ul class="row navbar-nav w-auto mx-auto">
+        <li class="col-12 col-lg-1 my-auto py-1 py-lg-0 nav-item">
+            <img src="/media/MS_cat_logo.jpg" id="cat-logo" alt="">
+        </li>
+        <li class="col-12 col-lg-1 my-auto py-1 py-lg-0 nav-item">
+            <a class="logo-font nav-link mr-5" href="#" id="home-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 HOME
             </a>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="col-12 col-lg-1 my-auto py-1 py-lg-0 nav-item dropdown">
+            <a class="logo-font nav-link mr-5" href="#" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
@@ -19,18 +21,19 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="col-12 col-lg-1 my-auto py-1 py-lg-0 nav-item">
+            <a class="logo-font nav-link" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
             </a>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="col-12 col-lg-4 my-auto py-1 py-lg-0 nav-item">
+            <a class="logo-font nav-link" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contact
             </a>
         </li>
-        <li>
+
+        <li class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <form method="GET" action="">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -45,4 +48,28 @@
             </form>
         </li>
     </ul>
+
+<!--
+  <div class="col-12 col-lg-1 my-auto py-1 py-lg-0">
+    <img src="/media/MS_cat_logo.jpg" id="cat-logo" alt="">
+  </div>
+  <div class="col-12 col-lg-1 my-auto py-1 py-lg-0">HOME</div>
+  <div class="col-12 col-lg-1 my-auto py-1 py-lg-0">Products</div>
+  <div class="col-12 col-lg-1 my-auto py-1 py-lg-0">About</div>
+  <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">Contact</div>
+  <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+    <form method="GET" action="">
+        <div class="input-group w-100">
+            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+            <div class="input-group-append">
+                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                    <span class="icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </form>
+  </div>
+  -->
 </div>
