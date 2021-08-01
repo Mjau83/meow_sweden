@@ -151,7 +151,7 @@ I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### Frameworks and Libraries 
 * [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
