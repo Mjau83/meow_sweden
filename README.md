@@ -138,8 +138,10 @@ I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a
 
 ## Features
 * Responsive on different devices
-* 
-* 
+* Registration and log in for Customer Users
+* Possability to edit Customer profile and view order history when logged in
+* Browse products by category
+* Possability for Admin User to add, edit and delete products when logged in
 
 [Back to top](#table-of-content)
 
