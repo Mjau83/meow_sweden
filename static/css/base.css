@@ -91,6 +91,24 @@
     border: 1px solid black !important;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #fffbff;
+	z-index: -1;
+}
+
+.title-header {
+    background: url('/media/background-leo-white-gold.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(70vh - 180px);
+    color:#f8e085;
+    font-family: 'Raleway', sans-serif;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
