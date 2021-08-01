@@ -27,7 +27,9 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
     * [User Stories](#user-stories)
     * [Site Owner Goals](#site-owner-goals)
     * [Design](#design) 
-* [**Wireframes**](#wireframes)
+* [**Wireframes and Flowcharts**](#wireframes-and-flowcharts)
+    * [Wireframes](#wireframes)
+    * [Flowcharts](#flowcharts)
 * [**Features**](#features)
 * [**Technologies Used**](#technologies-used)
     * [Languages](#languages)
@@ -86,13 +88,14 @@ All product images are me own and was photographed my me. Background images are 
 
 I wanted to use colors that match background images and giving the website a luxurious feeling with some gold.
 
-![Color palette](assets/images/color-palette.png)
+![Color palette](readme-images/meow-sweden-palette.png)
 
 [Back to top](#table-of-content)
 
 
-## Wireframes
-Balsamiq was used to create the wireframes for this project
+## Wireframes and Flowcharts
+### Wireframes
+[Balsamic](https://balsamiq.com) was used to create the wireframes for this project
 
 * Desktop Wireframes
     * [HOME](wireframes/HOME-DeskTop.png)
@@ -125,6 +128,11 @@ Balsamiq was used to create the wireframes for this project
     * [Shopping Bag](wireframes/View-Shopping-Bag-SP.png)
     * [Checkout](wireframes/Checkout-SP.png)
 
+### Flowcharts
+I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a better understanding of what happens when on the site for bothe the Admin User and Registered custom User.
+
+![Flowchart](readme-images/meow-sweden-flowchart.png)
+
 [Back to top](#table-of-content)
 
 
@@ -154,7 +162,7 @@ palette
 ### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
 the project
-*[Draw.io](https://app.diagrams.net/) was used to make the flowchart
+* [Draw.io](https://app.diagrams.net/) was used to make the flowchart
 * [Material.io](https://material.io/) was used to check that the contrast is ok
 ??* [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
