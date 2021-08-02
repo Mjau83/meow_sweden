@@ -65,6 +65,26 @@
     font-family: 'Raleway', sans-serif;
 }
 
+#best-sellers-slider {
+    height: 300px;
+    width: 70%;
+}
+
+.carousel .carousel-item {
+    height: 300px;
+    width: 70%;
+  }
+  
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+
 .best-seller-button {
     background: black;
     color: #f8e085;
