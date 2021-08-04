@@ -1,7 +1,8 @@
-/*html {
-    height: 100%;
-}*/
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+}
 
+h2,
 #main-header {
     background: url('/media/backgroun-tiger-rose-dpink.png') no-repeat center center fixed;
     background-size: cover;

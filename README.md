@@ -1,7 +1,3 @@
-
-____________README.md -mall______________
-
-
 # Meow Sweden
 ### Handmade accessories and jewelry with cattitude =^.^=
 
@@ -78,7 +74,9 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 #### Fonts:
 
 I used fonts from [Google Fonts](https://fonts.google.com/)
-* [Fontname]
+* [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond?query=cor) on h1
+* [Raleway](https://fonts.google.com/specimen/Raleway?query=rale) on h2/h3
+* [Roboto](https://fonts.google.com/specimen/Roboto) on paragraphs
 
 #### Images:
 
