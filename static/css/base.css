@@ -129,6 +129,11 @@ p {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #3b3b3b !important;
+    color: #fffbff !important;
+}
+
 .title-header {
     background: url('/media/background-leo-white-gold.png') no-repeat center center fixed;
     background-size: cover;
