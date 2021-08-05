@@ -14,10 +14,10 @@
                 Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="" class="dropdown-item">Cat Ears</a>
-                <a href="" class="dropdown-item">Quipu</a>
-                <a href="" class="dropdown-item">Best Sellers</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=cat_ears" class="dropdown-item">Cat Ears</a>
+                <a href="{% url 'products' %}?category=quipu" class="dropdown-item">Quipu</a>
+                <a href="{% url 'products' %}?category=best_sellers" class="dropdown-item">Best Sellers</a>
+                <a href="{% url 'products' %}?category=cat_ears,quipu,best_sellers" class="dropdown-item">All Products</a>
             </div>
         </li>
 
