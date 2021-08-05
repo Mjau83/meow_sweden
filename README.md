@@ -26,6 +26,7 @@ This project is actually why I got into coding. I started up Meow Sweden in spri
 * [**Wireframes and Flowcharts**](#wireframes-and-flowcharts)
     * [Wireframes](#wireframes)
     * [Flowcharts](#flowcharts)
+* [**Database Structrue**](#database-structure)
 * [**Features**](#features)
 * [**Technologies Used**](#technologies-used)
     * [Languages](#languages)
@@ -132,6 +133,15 @@ I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a
 ![Flowchart](readme-images/meow-sweden-flowchart.png)
 
 [Back to top](#table-of-content)
+
+## Database Structure
+
+### Category
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Name | name | CharField | max_length=200
+Friendly Name | friendly_name | CharField | max_length=200, null=True, blank=True
+
 
 
 ## Features
