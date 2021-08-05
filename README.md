@@ -142,6 +142,16 @@ I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a
 Name | name | CharField | max_length=200
 Friendly Name | friendly_name | CharField | max_length=200, null=True, blank=True
 
+### Products
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Category | category | ForeignKey | null=True, blank=True, on_delete=models.SET_NULL
+SKU | sku | CharField | max_length=200, null=True, blank=True
+Name | name | CharField | max_length=200
+Description | description | TextField| 
+Price | price | DecimalField | max_digits=6, decimal_places=2
+Image URL | image_url | URLField | max_length=1024, null=True, blank=True
+Image | image | ImageField| null=True, blank=True
 
 
 ## Features
