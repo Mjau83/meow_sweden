@@ -2,7 +2,14 @@ h1 {
     font-family: 'Cormorant Garamond', serif;
 }
 
-h2,
+h2,h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 #main-header {
     background: url('/media/backgroun-tiger-rose-dpink.png') no-repeat center center fixed;
     background-size: cover;
@@ -155,5 +162,15 @@ h2,
 
     .index-content {
         padding-top: 55px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
