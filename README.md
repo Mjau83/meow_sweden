@@ -172,25 +172,30 @@ Image | image | ImageField| null=True, blank=True
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### Frameworks and Libraries 
+* [Django](https://www.djangoproject.com/) was used for framework
 * [Google Fonts](https://fonts.google.com/) was used to import the fonts mentioned above 
 in the project
 * [Coolors](https://coolors.co/) was used to decide on th colors and to create the color 
 palette
 * [Am I Responsive](http://ami.responsivedesign.is/) was used to make the mockup
-* [Boostrap](https://getbootstrap.com/) was used to make the site responsive
+* [Bootstrap](https://getbootstrap.com/) was used to make the site responsive
+* [Font Awsome](https://fontawesome.com/) was used for the icons
+* [Stripe](https://stripe.com/) was used to create payment infrastructure
 
 ### Tools
 * [Balsamic](https://balsamiq.com) was used to create wireframes in the beginning of 
 the project
 * [Draw.io](https://app.diagrams.net/) was used to make the flowchart
 * [Material.io](https://material.io/) was used to check that the contrast is ok
-??* [Gimp](https://www.gimp.org/) was used to edit photos.
+* [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
 * [Webformatter](https://webformatter.com/html) was used to beautify the code
 ??* [Copressor.io](https://compressor.io/) was used to compress the background image
+* [Heroku](https://id.heroku.com/login) was used to deploy and host the site
 * [Gitpod](https://gitpod.io/) was used for coding the project
 * [Github](https://github.com/) was used to save and stored on the project after being 
-pushed from Gitpod. Github was also use to deploy the site
+pushed from Gitpod.
+* [AWS S3 Bucket](https://aws.amazon.com/s3/) was used for storing static and media files
 
 [Back to top](#table-of-content)
 
