@@ -1,3 +1,4 @@
+/* Fonts and sizes */
 h1 {
     font-family: 'Cormorant Garamond', serif;
 }
@@ -10,6 +11,7 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Headers and navigation */
 #main-header {
     background: url('/media/backgroun-tiger-rose-dpink.png') no-repeat center center fixed;
     background-size: cover;
@@ -65,6 +67,7 @@ p {
     padding-top: 150px;
 }*/
 
+/* Best Seller section */
 #best-seller{
     background: url('/media/background-tiger-grey-black.png') no-repeat center center fixed;
     background-size: cover;
@@ -100,17 +103,10 @@ p {
     font-family: 'Cormorant Garamond', serif;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
 .best-seller-button:hover,
 .best-seller-button:active,
 .best-seller-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+ {
     background: #222;
     color: #b4853e;
 }
@@ -119,6 +115,7 @@ p {
     border: 1px solid black !important;
 }
 
+/* Products page */
 .overlay {
 	height: 100%;
 	width: 100%;
