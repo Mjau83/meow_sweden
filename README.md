@@ -149,6 +149,9 @@ Category | category | ForeignKey | null=True, blank=True, on_delete=models.SET_N
 SKU | sku | CharField | max_length=200, null=True, blank=True
 Name | name | CharField | max_length=200
 Description | description | TextField| 
+Cat ears has colors| catears_has_colors | BooleanField | default=False, null=True, blank=True
+Quipu color| quipu_color | BooleanField | default=False, null=True, blank=True
+Quipu stone pearl | quipu_stonepearl | BooleanField | default=False, null=True, blank=True
 Price | price | DecimalField | max_digits=6, decimal_places=2
 Image URL | image_url | URLField | max_length=1024, null=True, blank=True
 Image | image | ImageField| null=True, blank=True
