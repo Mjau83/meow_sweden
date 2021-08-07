@@ -208,8 +208,8 @@ You can read all about the testing of this site [Here](testing.md)
 
 ## Bugs
 
-**Name of bug**
-* **Bug**
+**Page content bug**
+* **The main content of the pages is hidden underneith the main nav so the top of the page isn't visable**
 
 Text
 
