@@ -105,8 +105,7 @@ p {
 
 .best-seller-button:hover,
 .best-seller-button:active,
-.best-seller-button:focus,
- {
+.best-seller-button:focus {
     background: #222;
     color: #b4853e;
 }
@@ -158,6 +157,19 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
     color: #d3b4af;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 /* -------------------------------- Media Queries */
