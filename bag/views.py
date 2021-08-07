@@ -14,7 +14,7 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     color = None
     if 'catear_color' in request.POST:
-        color = request.POST['color']
+        color = request.POST['catear_color']
     bag = request.session.get('bag', {})
 
     if color:
