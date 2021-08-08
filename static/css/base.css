@@ -71,7 +71,6 @@ p {
 #best-seller{
     background: url('/media/background-tiger-grey-black.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(70vh - 180px);
     color:#b4853e;
     font-family: 'Raleway', sans-serif;
 }
@@ -85,16 +84,23 @@ p {
     height: 300px;
     width: 70%;
   }
-  
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto !important;
+    right: -261px;
+}
+
 .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
     width: 70%;
     height: auto;
-    margin: 1rem auto;
+    margin: 0 auto;
   }
-
 
 .best-seller-button {
     background: black;
