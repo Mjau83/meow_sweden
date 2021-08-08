@@ -10,7 +10,7 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var color = $(this).data('catear_color');
-        var url = `/bag/remove/${itemId}`;
+        var url = `/bag/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken, 'catear_color': color};
 
         $.post(url, data)
