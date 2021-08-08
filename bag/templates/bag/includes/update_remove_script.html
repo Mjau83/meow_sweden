@@ -9,9 +9,9 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var color = $(this).data('color');
+        var color = $(this).data('catear_color');
         var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'color': color};
+        var data = {'csrfmiddlewaretoken': csrfToken, 'catear_color': color};
 
         $.post(url, data)
          .done(function() {
