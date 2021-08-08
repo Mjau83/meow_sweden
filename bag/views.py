@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect,reverse
+from django.shortcuts import render, redirect, reverse
 
 
 def view_bag(request):
@@ -39,7 +39,7 @@ def adjust_bag_items(request, item_id):
     """ Add selected quantity of a product to shopping bag """
 
     quantity = int(request.POST.get('quantity'))
-    
+
     color = None
     if 'catear_color' in request.POST:
         color = request.POST['catear_color']
@@ -47,7 +47,7 @@ def adjust_bag_items(request, item_id):
 
     if color:
         if quantity > 0:
-           bag[item_id]['items_by_color'][color] = quantity
+            bag[item_id]['items_by_color'][color] = quantity
         else:
             del bag[item_id]['items_by_color'][color]
     else:
