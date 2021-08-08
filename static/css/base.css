@@ -160,7 +160,9 @@ a.category-badge > span.badge:hover {
     border-radius: 10px;
 }
 
-.btt-link {
+.btt-link, 
+.update-link,
+.remove-link {
     cursor: pointer;
     color: #d3b4af;
 }
