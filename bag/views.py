@@ -13,7 +13,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add selected quantity of a product to shopping bag """
 
-    products = Product.objects.get(pk=item_id)
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     color = None
@@ -66,6 +66,7 @@ def adjust_bag_items(request, item_id):
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
+
 def remove_bag_items(request, item_id):
     """ Remove selected product from shopping bag """
 
@@ -86,4 +87,4 @@ def remove_bag_items(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        return HttpResponse(status=500) 
+        return HttpResponse(status=500)

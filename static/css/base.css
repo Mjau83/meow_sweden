@@ -1,4 +1,4 @@
-/* Fonts and sizes */
+/* ------------------ Fonts and sizes */
 h1 {
     font-family: 'Cormorant Garamond', serif;
 }
@@ -11,7 +11,7 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Headers and navigation */
+/* ------------------ Headers and navigation */
 #main-header {
     background: url('/media/backgroun-tiger-rose-dpink.png') no-repeat center center fixed;
     background-size: cover;
@@ -67,7 +67,7 @@ p {
     padding-top: 150px;
 }*/
 
-/* Best Seller section */
+/* ------------------ Best Seller section */
 #best-seller{
     background: url('/media/background-tiger-grey-black.png') no-repeat center center fixed;
     background-size: cover;
@@ -120,7 +120,7 @@ p {
     border: 1px solid black !important;
 }
 
-/* Products page */
+/* ------------------ Products page */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -178,6 +178,22 @@ a.category-badge > span.badge:hover {
 .btn-outline-black:focus {
     background: black;
     color: white !important;
+}
+
+/* ------------------ Toasts from bootstrap */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
 }
 
 /* -------------------------------- Media Queries */
