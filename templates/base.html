@@ -110,6 +110,8 @@
     <!-- Add footer -->
 
     {% block postloadjs %}
+    {{ block.super }}
+    {% include 'templates/includes/toast_script.html' %}
     {% endblock %}
   </body>
 </html>
