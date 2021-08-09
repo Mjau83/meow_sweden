@@ -64,17 +64,14 @@ p {
     width: fit-content;
 }
 
-/*.index-content {
-    padding-top: 150px;
-}*/
-
 /* ------------------ Best Seller section */
+
 #best-seller{
     background: url('/media/background-tiger-grey-black.png') no-repeat center center fixed;
     background-size: cover;
     color:#b4853e;
     font-family: 'Raleway', sans-serif;
-    padding-top: 70px;
+    padding-top: 230px;
 }
 
 #best-sellers-slider {
@@ -135,17 +132,27 @@ p {
 	z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
-    background: #3b3b3b !important;
-    color: #fffbff !important;
-}
-
 .title-header {
     background: url('/media/background-leo-white-gold.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(70vh - 180px);
     color:#f8e085;
     font-family: 'Raleway', sans-serif;
+    padding-top: 230px;
+}
+
+.title-span {
+    background: #3b3b3b;
+    padding: 5px 30px;
+}
+
+a.category-badge {
+    color: #3b3b3b;
+}
+
+a.category-badge > span.badge:hover {
+    background: #3b3b3b !important;
+    color: #fffbff !important;
 }
 
 .btt-button {
@@ -208,15 +215,17 @@ a.category-badge > span.badge:hover {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
+/* -------------------------------- Media Queries large screens*/
 @media (min-width: 1200px) {
+    /* Slightly larger container on xl screens */
   .container {
     max-width: 80%;
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* -------------------------------- Media Queries Tablet */
 @media (min-width: 992px) {
+    /* fixed top navbar only on medium and up */
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -225,21 +234,33 @@ a.category-badge > span.badge:hover {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 180px;
+    .carousel-inner {
+        left: 430px;
     }
 
-    .index-content {
-        padding-top: 55px;
-    }
 }
 
+/* -------------------------------- Media Queries Smartphone */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 70px;
     }
 
+    #best-seller {
+        padding-top: 70px;
+    }
+
+    .carousel-inner {
+        overflow: hidden;
+        left: 245px;
+    }
+
+    .title-header {
+        padding-top: 70px;
+        height: auto;
+    }
+/*
     body {
         height: calc(100vh - 116px);
-    }
+    }*/
 }
