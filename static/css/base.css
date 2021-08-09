@@ -5,6 +5,7 @@ h1 {
 
 h2,h3 {
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
 }
 
 p {
@@ -73,6 +74,7 @@ p {
     background-size: cover;
     color:#b4853e;
     font-family: 'Raleway', sans-serif;
+    padding-top: 70px;
 }
 
 #best-sellers-slider {
@@ -90,7 +92,7 @@ p {
     width: 100%;
     overflow: hidden;
     margin: 0 auto !important;
-    right: -261px;
+    right: -430px;
 }
 
 .carousel-item img {
@@ -107,6 +109,8 @@ p {
     color: #f8e085;
     min-width: 260px;
     font-family: 'Cormorant Garamond', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .best-seller-button:hover,
