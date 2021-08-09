@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
@@ -13,7 +13,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add selected quantity of a product to shopping bag """
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     color = None
@@ -25,13 +25,17 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if color in bag[item_id]['items_by_color'].keys():
                 bag[item_id]['items_by_color'][color] += quantity
+                messages.success(request, f'Updated {color()} {product.name} quantity to {bag[item_id]["items_by_color"][color]}')
             else:
                 bag[item_id]['items_by_color'][color] = quantity
+                messages.success(request, f'Added {color()} {product.name} to your Shopping Bag')
         else:
             bag[item_id] = {'items_by_color': {color: quantity}}
+            messages.success(request, f'Added {color()} {product.name} to your Shopping Bag')
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
+            messages.success(request, f'Quantity of {product.name} is updated to {bag[item_id]}!')
         else:
             bag[item_id] = quantity
             messages.success(request, f'{product.name} was successfully added to your Shopping Bag!')
@@ -43,6 +47,7 @@ def add_to_bag(request, item_id):
 def adjust_bag_items(request, item_id):
     """ Adjust quantity of products in the shopping bag """
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
 
     color = None
@@ -53,15 +58,19 @@ def adjust_bag_items(request, item_id):
     if color:
         if quantity > 0:
             bag[item_id]['items_by_color'][color] = quantity
+            messages.success(request, f'Updated {color()} {product.name} quantity to {bag[item_id]["items_by_color"][color]}')
         else:
             del bag[item_id]['items_by_color'][color]
             if not bag[item_id]['items_by_color']:
                 bag.pop(item_id)
+            messages.success(request, f'Removed {color()} {product.name} from your Shopping Bag')
     else:
         if quantity > 0:
             bag[item_id] = quantity
+            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
         else:
             bag.pop(item_id)
+            messages.success(request, f'Removed {product.name} from your Shopping Bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
