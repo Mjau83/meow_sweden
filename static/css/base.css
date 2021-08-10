@@ -191,6 +191,10 @@ a.category-badge > span.badge:hover {
     color: white !important;
 }
 
+.info-container {
+    padding-top: 230px;
+}
+
 /* ------------------ Toasts from bootstrap */
 .message-container {
     position: fixed;
@@ -212,6 +216,13 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* -------------------------------- Shopping Bag */
+.bag-container {
+    padding-top: 230px;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
@@ -258,6 +269,10 @@ a.category-badge > span.badge:hover {
     .title-header {
         padding-top: 70px;
         height: auto;
+    }
+
+    .bag-container {
+        padding-top: 100px;
     }
 /*
     body {
