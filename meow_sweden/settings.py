@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     # Other
-    'crispy_forms'
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +66,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'meow_sweden.urls'
 
-CRISPY_TEMPLATE_PACK = 'boostrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -82,9 +82,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag_contents'
+                'django.template.context_processors.media',
+                'bag.contexts.bag_contents',
             ],
-            'bulitins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ]

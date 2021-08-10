@@ -1,0 +1,12 @@
+.checkout-container {
+    padding-top: 300px;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+/* -------------------------------- Media Queries */
+@media (min-width: 992px) {}
+@media (max-width: 991px) {}
