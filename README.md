@@ -172,7 +172,14 @@ Delivery Cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, n
 Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
 Grand Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
 
-
+### OrderLineItem
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Order | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+Product | product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE
+Catear Color | catear_color | CharField | max_length=20, null=True, blank=True 
+Quantity | quantity | IntegerField | null=False, blank=False, default=0
+Lineitem Total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
 ## Features
 * Responsive on different devices
