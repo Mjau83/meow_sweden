@@ -156,6 +156,23 @@ Price | price | DecimalField | max_digits=6, decimal_places=2
 Image URL | image_url | URLField | max_length=1024, null=True, blank=True
 Image | image | ImageField| null=True, blank=True
 
+### Order
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Order Number | order_number | CharField | max_length=32, null=False, editable=False
+Full Name | full_name | CharField | max_length=50, null=False, blank=False
+Email | email | EmailField | max_length=254, null=False, blank=False
+Street Address 1 | street_address1 | CharField | max_length=80, null=False, blank=False
+Street Adress 2 | street_address2 | CharField | max_length=80, null=True, blank=True
+Town/City | town_or_city | CharField | max_length=40, null=False, blank=False
+Post Code | postcode | CharField | max_length=20, null=True, blank=True
+Country | country | CharField | max_length=40, null=False, blank=False
+Date | date | DateTimeField | auto_now_add=True
+Delivery Cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
+Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+Grand Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+
+
 
 ## Features
 * Responsive on different devices
