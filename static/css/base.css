@@ -223,7 +223,6 @@ a.category-badge > span.badge:hover {
 }
 
 
-
 /* -------------------------------- Media Queries */
 
 /* -------------------------------- Media Queries large screens*/
@@ -269,6 +268,10 @@ a.category-badge > span.badge:hover {
     .title-header {
         padding-top: 70px;
         height: auto;
+    }
+
+    .info-container {
+        padding-top: 10px;
     }
 
     .bag-container {
