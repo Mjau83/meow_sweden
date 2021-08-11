@@ -46,6 +46,25 @@
     border: 1px solid #3b3b3b;
 }
 
+
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 59, 59, 0.7);
+    z-index: 9999;
+}
+
+.loading-spinner {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
 /* -------------------------------- Media Queries */
 @media (min-width: 992px) {}
 @media (max-width: 991px) {}

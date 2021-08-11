@@ -162,7 +162,7 @@ a.category-badge > span.badge:hover {
     bottom: 10px;
     right: 10px;
     border-radius: 10px;
-    background: rgba(59, 59, 59, 0.7)
+    background: rgba(59, 59, 59, 0.7);
 }
 
 .btt-button a:hover {
