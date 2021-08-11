@@ -24,7 +24,7 @@
                 <p class="text-black">A confirmation email will be sent to <strong>{{ order.email }}</strong>. This is your order information</p>
             </div>
         </div>
-
+        <!-- Order information shown to the customer to confirm the order -->
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
@@ -130,6 +130,30 @@
                     <div class="row">
                         <div class="col">
                             <small class="text-muted">Billing Info:</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 font-weight-bold">Order Total</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ order.order_total }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 font-weight-bold">Delivery</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ order.delivery_cost }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 font-weight-bold">Grand Total</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ order.grand_total }}</p>
                         </div>
                     </div>
                 </div>
