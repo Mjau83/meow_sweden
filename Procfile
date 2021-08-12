@@ -1,0 +1,1 @@
+web: gunicorn meow_sweden.wsgi:application
