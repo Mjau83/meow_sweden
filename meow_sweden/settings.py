@@ -33,7 +33,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['meow-sweden.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
