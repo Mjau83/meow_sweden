@@ -166,11 +166,13 @@ Street Address 1 | street_address1 | CharField | max_length=80, null=False, blan
 Street Adress 2 | street_address2 | CharField | max_length=80, null=True, blank=True
 Town/City | town_or_city | CharField | max_length=40, null=False, blank=False
 Post Code | postcode | CharField | max_length=20, null=True, blank=True
-Country | country | CharField | max_length=40, null=False, blank=False
+Country | country | CountryField | blank_label='Country *', null=False, blank=False
 Date | date | DateTimeField | auto_now_add=True
 Delivery Cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
 Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
 Grand Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+Original Bag | original_bag | TextField | null=False, blank=False, default=''
+Stripe PayID | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
 
 ### OrderLineItem
 **Name** | **Database Key** | **Field Type** | **Validation**
@@ -180,6 +182,16 @@ Product | product | ForeignKey | Product, null=False, blank=False, on_delete=mod
 Catear Color | catear_color | CharField | max_length=20, null=True, blank=True 
 Quantity | quantity | IntegerField | null=False, blank=False, default=0
 Lineitem Total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+### UserProfile
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+User | user | OneToOneField | User, on_delete=models.CASCADE
+Street Address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+Street Adress 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
+Town/City | default_town_or_city | CharField | max_length=40, null=True, blank=True
+Post Code | default_postcode | CharField | max_length=20, null=True, blank=True
+Country | default_country | CountryField | blank_label='Country *', null=True, blank=True
 
 ## Features
 * Responsive on different devices
