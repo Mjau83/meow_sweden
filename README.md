@@ -248,8 +248,8 @@ Text
 
 Text
 
-**Name of bug**
-* **Bug**
+**Webhook bug**
+* **When trying to send a test webhook from Stripe I get "Bad Request checkout/wh/" printed in the termminal and a 400 http response**
 
 Text
 
@@ -296,7 +296,7 @@ How to deploy project using Github pages:
 * [ ]( )
 * [ ]( )
 
-* Thank you to
+* Thank you to Igor igor_ci for really taking his time and helping me out and explaining when I got stuck with the webhooks. I truly appreciate it.
 * A huge thank you to my mentor Simen Eventyret_mentor for all the good advices, feedback 
 and most of all patience.
 * Thank you to my older brother David who’s been a wonderful support in me deepest times of 

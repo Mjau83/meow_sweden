@@ -74,7 +74,7 @@ form.addEventListener('submit', function(ev) {
             },
             shipping: {
                 name: $.trim(form.full_name.value),
-                email: $.trim(form.email.value),
+                //email: $.trim(form.email.value),
                 address:{
                     line1: $.trim(form.street_address1.value),
                     line2: $.trim(form.street_address2.value),
@@ -99,12 +99,12 @@ form.addEventListener('submit', function(ev) {
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit();
+                   form.submit();
                 }
             }
         });
     }).fail(function() {
         // Reloads page and shows error in django messages
-        location.reload():
+        location.reload();
     })
 });
