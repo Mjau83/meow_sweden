@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse,\
+                            get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -61,7 +62,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for color, quantity in item_data['items_by_color'].items():
+                        for color, quantity in item_data['items_by_color'].\
+                          items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -155,7 +157,6 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
 
     messages.success(request, f'Yaaay! Your order was successfully submitted! \
         Your order number is {order_number}. A confirmation \
