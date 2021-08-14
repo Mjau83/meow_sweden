@@ -76,6 +76,9 @@
                                                         {% if item.product.catears_has_colors %}
                                                             <input type="hidden" name="catear_color" value="{{ item.color }}">
                                                         {% endif %}
+                                                        {% if item.product.qupiu_custom_form %}
+                                                            <input type="hidden" name="quipu_color_choise" value="{{ item.color }}">
+                                                        {% endif %}
                                                     </div>
                                                 </div>
                                             </form>

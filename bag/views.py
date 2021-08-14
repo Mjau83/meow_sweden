@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (render, redirect, reverse, HttpResponse,
+                              get_object_or_404)
 from django.contrib import messages
 
 from products.models import Product
@@ -25,7 +26,7 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if color in bag[item_id]['items_by_color'].keys():
                 bag[item_id]['items_by_color'][color] += quantity
-                messages.success(request, f'Updated {color.upper()} {product.name} quantity to {bag[item_id]["items_by_color"][color]}')
+                messages.success(request, f'Updated {color.upper()} {product.name} quantity to {bag[item_id] ["items_by_color"][color]}')
             else:
                 bag[item_id]['items_by_color'][color] = quantity
                 messages.success(request, f'Added {color.upper()} {product.name} to your Shopping Bag')
