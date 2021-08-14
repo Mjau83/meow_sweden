@@ -16,26 +16,6 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True,
-                                 on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=200, null=True, blank=True)
-    name = models.CharField(max_length=200)
-    description = models.TextField()
-    catears_has_colors = models.ForeignKey('CatEarColor', null=True,
-                                           blank=True,
-                                           on_delete=models.SET_NULL)
-    qupiu_custom_form = models.ForeignKey('QuipuForm', null=True,
-                                          on_delete=models.SET_NULL,
-                                          blank=False)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
-
 class CatEarColor(models.Model):
     name = models.CharField(max_length=50)
 
@@ -44,7 +24,6 @@ class CatEarColor(models.Model):
 
 
 class QuipuForm(models.Model):
-    name_field = models.CharField(max_length=12)
     PEARL_WHITE = 'PW'
     LIGHT_BLUE = 'LB'
     IRIDECENT_PURPLE = 'IP'
@@ -85,6 +64,28 @@ class QuipuForm(models.Model):
     quipu_stone_pearl = models.CharField(
         max_length=2, choices=QUPIU_STONE_PEARL, default=LABRADORITE
     )
+    name_field = models.CharField(max_length=12)
 
     def __str__(self):
         return f'You picked {self.quipu_color} and {self.quipu_stone_pearl}'
+
+
+class Product(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=200, null=True, blank=True)
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    catears_has_colors = models.ForeignKey('CatEarColor', null=True,
+                                           blank=True,
+                                           on_delete=models.SET_NULL)
+    qupiu_custom_form = models.ForeignKey('QuipuForm', null=True,
+                                          on_delete=models.SET_NULL,
+                                          blank=False)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+

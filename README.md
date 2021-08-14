@@ -87,7 +87,7 @@ All product images are me own and was photographed my me. Background images are 
 
 I wanted to use colors that match background images and giving the website a luxurious feeling with some gold.
 
-![Color palette](readme-images/meow-sweden-palette.png)
+![Color palette](wireframes/meow-sweden-palette.png)
 
 [Back to top](#table-of-content)
 
@@ -128,9 +128,9 @@ I wanted to use colors that match background images and giving the website a lux
     * [Checkout](wireframes/Checkout-SP.png)
 
 ### Flowcharts
-I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a better understanding of what happens when on the site for bothe the Admin User and Registered custom User.
+I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a better understanding of what happens when on the site for both the Admin User and Registered custom User.
 
-![Flowchart](readme-images/meow-sweden-flowchart.png)
+![Flowchart](wireframes/meow-sweden-flowchart.png)
 
 [Back to top](#table-of-content)
 

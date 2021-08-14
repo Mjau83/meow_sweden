@@ -1,0 +1,1 @@
+[{"model": "products.category", "pk": 1, "fields": {"name": "cat_ears", "friendly_name": "Cat Ears"}}, {"model": "products.category", "pk": 2, "fields": {"name": "quipu", "friendly_name": "Quipu"}}, {"model": "products.category", "pk": 3, "fields": {"name": "best_sellers", "friendly_name": "Best Sellers"}}]
