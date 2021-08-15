@@ -34,7 +34,6 @@ class QuipuFormAdmin(admin.ModelAdmin):
         'name_field',
     )
 
-
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(CatEarColor, CatEarColorAdmin)
