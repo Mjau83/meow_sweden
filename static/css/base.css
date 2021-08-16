@@ -64,6 +64,14 @@ p {
     width: fit-content;
 }
 
+.list-inline-item i{
+    color: #fde5dd !important;
+}
+
+.navbar-toggler-icon {
+    color: #fde5dd !important;
+}
+
 /* ------------------ Best Seller section */
 
 #best-seller{
