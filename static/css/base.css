@@ -288,6 +288,21 @@ input[name='q']::placeholder {
     padding-top: 40px;
 }
 
+/* -------------------------------- Footer */
+.footer-container {
+    background-color: #3b3b3b;
+    color: #fde5dd;
+}
+
+a.social {
+    color: #fde5dd;
+}
+
+.shipping{
+    
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* -------------------------------- Media Queries large screens*/
