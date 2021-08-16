@@ -35,6 +35,10 @@ p {
     color: #fde5dd;
 }
 
+.navbar {
+    width: 100%;
+}
+
 .dropdown-menu {
     background-color: #000;
 }
@@ -353,6 +357,14 @@ input[name='q']::placeholder {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 70px;
+    }
+
+    .navbar {
+        width: 70%;
+    }
+
+    .index-content {
+        right: 430px;
     }
 
     #best-seller {
