@@ -336,7 +336,7 @@ input[name='q']::placeholder {
   }
 }
 
-/* -------------------------------- Media Queries Tablet */
+/* -------------------------------- Media Queries  */
 @media (min-width: 992px) {
     /* fixed top navbar only on medium and up */
     .fixed-top-desktop-only {
@@ -353,18 +353,10 @@ input[name='q']::placeholder {
 
 }
 
-/* -------------------------------- Media Queries Smartphone */
+/* -------------------------------- Media Queries Tablet  */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 70px;
-    }
-
-    .navbar {
-        width: 70%;
-    }
-
-    .index-content {
-        right: 430px;
     }
 
     #best-seller {
@@ -394,8 +386,17 @@ input[name='q']::placeholder {
         padding-bottom: 15px;
         text-align: center;
     }
-/*
-    body {
-        height: calc(100vh - 116px);
-    }*/
+}
+
+/* -------------------------------- Media Queries Smartphone */
+
+@media (max-width: 576px){
+
+    .index-content{
+        right: 430px;
+    }
+    .carousel-inner {
+        overflow: hidden;
+        left: 100px;
+    }
 }
