@@ -194,6 +194,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.form-control i {
+    color: #fde5dd;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
