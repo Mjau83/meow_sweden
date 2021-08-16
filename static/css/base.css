@@ -292,16 +292,27 @@ input[name='q']::placeholder {
 .footer-container {
     background-color: #3b3b3b;
     color: #fde5dd;
+    margin-right: 20px;
 }
 
-a.social {
+.social-links i {
     color: #fde5dd;
+    font-size: 2rem;
+    padding-left: 10px;
 }
 
-.shipping{
-    
+.social-links i:hover {
+    color: #d3b4af;
 }
 
+.shipping-col{
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.shipping-col p {
+    margin-bottom: 0px;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -356,6 +367,12 @@ a.social {
 
     .bag-container {
         padding-top: 100px;
+    }
+
+    .footer-container {
+        padding-top: 25px;
+        padding-bottom: 15px;
+        text-align: center;
     }
 /*
     body {
