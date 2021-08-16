@@ -64,11 +64,11 @@ p {
     width: fit-content;
 }
 
-.list-inline-item i{
+.mobile-item i{
     color: #fde5dd !important;
 }
 
-.navbar-toggler-icon {
+.fa-bars {
     color: #fde5dd !important;
 }
 
