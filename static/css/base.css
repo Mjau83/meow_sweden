@@ -211,7 +211,8 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
-.info-container {
+.info-container,
+.add-product-container {
     padding-top: 230px;
 }
 
@@ -382,7 +383,8 @@ input[name='q']::placeholder {
         height: auto;
     }
 
-    .info-container {
+    .info-container,
+    .add-product-container {
         padding-top: 10px;
     }
 
