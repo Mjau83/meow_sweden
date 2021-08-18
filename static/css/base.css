@@ -215,6 +215,11 @@ input[name='q']::placeholder {
     padding-top: 230px;
 }
 
+.meow-card {
+    background-color: #fde5dd;
+    color: #3b3b3b;
+}
+
 /* ------------------ Toasts from bootstrap */
 .message-container {
     position: fixed;
