@@ -248,7 +248,6 @@ input[name='q']::placeholder {
     padding-top: 230px;
 }
 
-
 /* Allauth form formatting */
 .allauth-col-container {
     padding-top: 230px;
@@ -335,6 +334,34 @@ input[name='q']::placeholder {
 .shipping-col p {
     margin-bottom: 0px;
 }
+
+/* -------------------------------- Product form */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 1;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #000;
+    border-radius: 0;
+}
+
 
 /* -------------------------------- Media Queries */
 
