@@ -211,8 +211,14 @@ input[name='q']::placeholder {
     color: white !important;
 }
 
-.info-container {
+.info-container,
+.add-product-container {
     padding-top: 230px;
+}
+
+.meow-card {
+    background-color: #fde5dd;
+    color: #3b3b3b;
 }
 
 /* ------------------ Toasts from bootstrap */
@@ -377,7 +383,8 @@ input[name='q']::placeholder {
         height: auto;
     }
 
-    .info-container {
+    .info-container,
+    .add-product-container {
         padding-top: 10px;
     }
 

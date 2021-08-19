@@ -1,0 +1,46 @@
+Thank you {{ order.full_name }} for shopping at Meow Sweden!
+
+This is a confirmation of your order and some information about
+what's comming your way:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your address:
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ postcode }}
+{{ order.country }}
+
+---------------------------------------
+*** Some IMPORTAT stuff to think about ***
+
+* Payment must be made in full before I begin to make your order if the order is a personalized item. 
+Once payment is confirmed, it will generally take between 1-2 weeks if it's a personalized order.
+For all cancellations I will need to be notified WITHIN 48hrs of the item being purchased and before shipment, 
+or the order will be binding upon the customer.
+
+* Additional charges are the responsibility of the recipient because I have no control over these government-imposed 
+charges and cannot determine what they may be. Customs policies vary greatly among countries. 
+Please contact your local customs office for information.
+
+* Delivery time may vary, but will approximately take (longer for custom orders) :
+~ 3-5 business days within Sweden (FREE shipping)
+~ 7-10 business days to European countries  (€10 will be added for shipping)
+~1-2 weeks to North America
+
+---------------------------------------
+
+I hope that you will be happy with your item and that it will bring you lots of cattitude 
+and joy. 
+Please let me know if there's any issues or if you have any questions about your order, 
+and I will try my best to help you. 
+Feel free to contact me at {{ contact_email }}.
+
+Thank you again for being a paw-some person.
+Have a purr-fect day!
+// Mamoni "Mjau" Hemlin - Meow Sweden
