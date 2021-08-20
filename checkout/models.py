@@ -10,8 +10,23 @@ from products.models import Product
 from profiles.models import UserProfile
 
 
+class OrderStatus(models.Model):
+    STATUS = (
+        ('Pending', 'Pending'),
+        ('Production', 'Production'),
+        ('Shipped', 'Shipped'),
+    )
+
+    status = models.CharField(max_length=20, null=True, choices=STATUS,
+                              default='Pending')
+
+    def __str__(self):
+        return self.status
+
+
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
+    order_status = models.ForeignKey(OrderStatus, null=True, on_delete=models.SET_NULL)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
                                      related_name='orders')
@@ -91,18 +106,3 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
-
-
-class OrderStatus(models.Model):
-    STATUS = (
-        ('Pending', 'Pending'),
-        ('Production', 'Production'),
-        ('Shipped', 'Shipped'),
-    )
-
-    order_status = models.ForeignKey(Order, null=True, on_delete=models.SET_NULL)
-    status = models.CharField(max_length=20, null=True, choices=STATUS,
-                              default='Pending')
-
-    def __str__(self):
-        return self.status
