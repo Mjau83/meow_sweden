@@ -69,7 +69,7 @@ p {
 }
 
 .mobile-item i{
-    color: #fde5dd !important;
+    color: #fde5dd !important; /* use important to override link colors for <a> elements */
 }
 
 .fa-bars {
@@ -200,7 +200,7 @@ input[name='q']::placeholder {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
@@ -222,9 +222,9 @@ input[name='q']::placeholder {
 }
 
 /* ------------------ Toasts from bootstrap */
-.message-container {
+.messages-container {
     position: fixed;
-    top: 72px;
+    top: 60px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -436,5 +436,9 @@ input[name='q']::placeholder {
     .carousel-inner {
         overflow: hidden;
         left: 100px;
+    }
+
+    #delivery-banner {
+        font-size: 0.5rem;
     }
 }
