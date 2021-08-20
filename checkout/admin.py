@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Order, OrderLineItem, OrderStatus
+from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
@@ -14,18 +14,16 @@ class OrderAdmin(admin.ModelAdmin):
                        'delivery_cost', 'order_total',
                        'grand_total', 'original_bag', 'stripe_pid')
 
-    fields = ('order_number', 'user_profile', 'full_name', 'email',
+    fields = ('order_number', 'status', 'user_profile', 'full_name', 'email',
               'street_address1', 'street_address2',
               'town_or_city', 'postcode', 'country',
               'date', 'delivery_cost', 'order_total',
               'grand_total',)
 
-    list_display = ('order_number', 'full_name', 'date',
-                    'delivery_cost', 'order_total',
-                    'grand_total',)
+    list_display = ('order_number', 'date', 'full_name', 
+                    'status','order_total','grand_total',)
 
     ordering = ('-date',)
 
 
 admin.site.register(Order, OrderAdmin)
-admin.site.register(OrderStatus)
