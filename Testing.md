@@ -273,7 +273,8 @@ Text
 * As a site owner I want o be able to edit and delete products
 * As a site owner I want o be able to add new products to the webshop
 
-**As a site owner I want to,  **
+
+**As a site owner I want to promomte my products to my users**
 
 * Plan
 
@@ -295,7 +296,7 @@ Text
 
 Text
 
-**As a site owner I want to,  **
+**As a site owner I want to be able to see all the orders**
 
 * Plan
 
@@ -317,7 +318,73 @@ Text
 
 Text
 
-**As a site owner I want to,  **
+**As a site owner I want to be able to see all registered users**
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+**As a site owner I be able to log in and out of the admin profile**
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+**As a site owner I want o be able to edit and delete products**
+
+* Plan
+
+Text
+
+* Implementation
+
+Text
+
+* Test
+
+Text
+
+* Result
+
+Text
+
+* Verdict 
+
+Text
+
+**As a site owner I want o be able to add new products to the webshop**
 
 * Plan
 
