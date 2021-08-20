@@ -11,7 +11,7 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
-    order_number = models.CharField(max_length=7, null=False, editable=False)
+    order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
                                      related_name='orders')
@@ -41,7 +41,7 @@ class Order(models.Model):
 
     def update_total(self):
         """
-        Grand tottal getts updated every time a new item
+        Grand total getts updated every time a new item
         is added and calculates the delivery costs if there
         is any
         """
@@ -74,7 +74,8 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(Product, null=False, blank=False,
                                 on_delete=models.CASCADE)
     catear_color = models.CharField(max_length=20, null=True, blank=True)
-    quipu_color_choise = models.CharField(max_length=100, null=True, blank=True)
+    quipu_color_choise = models.CharField(max_length=100, null=True,
+                                          blank=True)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
                                          null=False, blank=False,
@@ -99,4 +100,9 @@ class OrderStatus(models.Model):
         ('Shipped', 'Shipped'),
     )
 
-    status = models.CharField(max_length=100, null=True, choices=STATUS)
+    order_status = models.ForeignKey(Order, null=True, on_delete=models.SET_NULL)
+    status = models.CharField(max_length=20, null=True, choices=STATUS,
+                              default='Pending')
+
+    def __str__(self):
+        return self.status

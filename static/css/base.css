@@ -246,6 +246,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Shopping Bag */
 .bag-container {
     padding-top: 230px;
+    height: 200px;
 }
 
 /* Allauth form formatting */
@@ -314,6 +315,9 @@ input[name='q']::placeholder {
     background-color: #3b3b3b;
     color: #fde5dd;
     margin-right: 20px;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
 }
 
 .social-links i {
