@@ -85,18 +85,15 @@ class QuipuForm(models.Model):
 
 
 class CustomerSelection(models.Model):
-    catears_has_colors = models.ForeignKey('CatEarColor', null=True,
-                                           blank=True,
-                                           on_delete=models.SET_NULL)
-    qupiu_custom_form = models.ForeignKey('QuipuForm', null=True,
-                                          on_delete=models.SET_NULL,
-                                          blank=True)
+    sku = models.CharField(max_length=200, null=True, blank=True)
+    option_name = models.CharField(max_length=200, default=None)
+    option_html = models.CharField(max_length=4000, null=False, blank=False,
+                                   default=None)
+    option_type = models.CharField(max_length=200, null=False, blank=False,
+                                   default=None)
 
     def __str__(self):
-        return self.catears_has_colors
-
-    def get_qupiu_custom_form(self):
-        return self.qupiu_custom_form
+        return self.sku
 
 
 class Product(models.Model):
