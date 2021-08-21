@@ -70,18 +70,28 @@ class QuipuForm(models.Model):
         return f'You picked {self.quipu_color} and {self.quipu_stone_pearl}'
 
 
-class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True,
-                                 on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=200, null=True, blank=True)
-    name = models.CharField(max_length=200)
-    description = models.TextField()
+class CustomerSelection(models.Model):
     catears_has_colors = models.ForeignKey('CatEarColor', null=True,
                                            blank=True,
                                            on_delete=models.SET_NULL)
     qupiu_custom_form = models.ForeignKey('QuipuForm', null=True,
                                           on_delete=models.SET_NULL,
                                           blank=True)
+    
+    def __str__(self):
+        return self.catears_has_colors
+    
+    def __str__(self):
+        return self.qupiu_custom_form
+
+
+class Product(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=200, null=True, blank=True)
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    customer_selection = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
