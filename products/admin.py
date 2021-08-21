@@ -23,7 +23,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class CatEarColorAdmin(admin.ModelAdmin):
     list_display = (
-        'name',
+        'catear_color',
     )
 
 

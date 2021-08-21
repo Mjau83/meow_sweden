@@ -17,10 +17,24 @@ class Category(models.Model):
 
 
 class CatEarColor(models.Model):
-    name = models.CharField(max_length=50)
+    BLUE = 'BL'
+    PINK = 'PN'
+    GREEN = 'GR'
+    WHITE = 'WH'
+    BLACK = 'BK'
+    CATEAR_COLOR = [
+        (BLUE, 'blue'),
+        (PINK, 'pink'),
+        (GREEN, 'green'),
+        (WHITE, 'white'),
+        (BLACK, 'black'),
+    ]
+    catear_color = models.CharField(
+        max_length=2, choices=CATEAR_COLOR, default=BLUE
+    )
 
     def __str__(self):
-        return self.name
+        return self.catear_color
 
 
 class QuipuForm(models.Model):
