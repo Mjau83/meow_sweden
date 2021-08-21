@@ -285,34 +285,63 @@ Text
 
 
 ## Deployment
-### GitHub Pages
-How to deploy project using Github pages:
 
-1. Go to Github
-2. Log in and click on “Repositories” tab in the top middle of the screen
-3. Choose this repository
-4. Click on the "Settings" tab (with a gear icon)
-5. Scroll down on the page until you find the "Github Pages" section
-6. Under "Source" you'll find a dropdown which is set to "none"
-7. Change it to "Master"
-8. Then click the save button. This will reload the page.
-9. Scroll back down to "Github Pages"
-10. A green alert box will now tell you that your site been published and provide you a link to the site.
+For this project you will need to account on the following pages
+* [Gmail](https://www.google.com/intl/sv/gmail/about/) for sending emails
+* [AWS (S3)](https://aws.amazon.com/) for storing staic files
+* [Stripe](https://stripe.com/) for payment functionallity
 
-![Deployment Image](assets/images/deployment.png)
+
+I used [Github](https://github.com/) to create the Meow Sweden project, [Gitpod](https://gitpod.io/) was used to write the code and [Heroku](https://id.heroku.com/login) to deploy it. You will need to install packages using pip. 
+[Go to the Python Guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) to find documentation about this.
+
+### Local Deployment
+1. In the rrepository, click the "code" button with a small arrow and download the zip with the code. You can also clone the repository your terminal printing:
+
+```git clone https://github.com/Mjau83/meow_sweden.git```
+
+
+2. To install the applications print the following in the terminal
+
+```pip3 install -r requirements.txt```
+
+3. At root level in the project, create a file called env.py and make sure it's added to your .gitignore file. The file should contain:
+
+```
+os.environ["STRIPE_WH_SECRET"] = "YOUR_STRIPE_WH_SECRET"
+os.environ['DEVELOPMENT'] = '1'
+os.environ['DATABASE_URL'] = 'YOUR_postgres_KEY'
+```
+4. In the Gitpod dashboardm go to Settings > Variable and create new envorimental variables for 
+
+* STRIPE_PUBLIC_KEY
+* STRIPE_SECRET_KEY
+* STRIPE_WH_SECRET
+
+Public and Secret key can be used for many projects, but WH Secret for the webhook needs to be set for this specific project. Go to the [Stripe documentataion](https://stripe.com/docs/keys) about API Keys to find out more.
+
+
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+
+![Deployment Image]()
 
 [Back to top](#table-of-content)
 
 ## Credits
 #### Inspiration 
-* [ ]( )
+* [Dennis Ivy](https://www.youtube.com/watch?v=xv_bwpA_aEA&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO )
 * [ ]( )
 
-* Thank you to Igor igor_ci for really taking his time and helping me out and explaining when I got stuck with the webhooks. I truly appreciate it.
-* A huge thank you to my mentor Simen Eventyret_mentor for all the good advices, feedback 
-and most of all patience.
-* Thank you to my older brother David who’s been a wonderful support in me deepest times of 
-dispear and helped me with testing and good advices to help me get a better understanding for the code.
-You're the best!
+* Many thanks to the awsome people at Tutor Support. Especally **Igor Basuga** and **Seán Murphy**. They both went  far and beyond when I needed it the most. They helped me get back on track, took their time explaining and showed a great amount of patinece. I truly, truly appreciate it.
+* A huge thank you to my mentor **Simen Eventyret_mentor** for all the good advices, feedback 
+and for challangeing me to always do better.
+* Thank you to my older brother **David** who’s been a wonderful support and helped me with testing and good advices.
+* Thank you to my friend **Christoffer Nicklasson**, who helped me answering questions and come up with solutions.
+
 
 [Back to top](#table-of-content)
