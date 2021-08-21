@@ -60,7 +60,7 @@ def all_products(request):
 
 
 def product_info(request, product_id):
-    """ Returns a view of all products """
+    """ Returns a view of product info for a specific product """
 
     product = get_object_or_404(Product, pk=product_id)
 
