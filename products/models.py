@@ -77,11 +77,11 @@ class CustomerSelection(models.Model):
     qupiu_custom_form = models.ForeignKey('QuipuForm', null=True,
                                           on_delete=models.SET_NULL,
                                           blank=True)
-    
+
     def __str__(self):
         return self.catears_has_colors
-    
-    def __str__(self):
+
+    def get_qupiu_custom_form(self):
         return self.qupiu_custom_form
 
 
@@ -91,7 +91,8 @@ class Product(models.Model):
     sku = models.CharField(max_length=200, null=True, blank=True)
     name = models.CharField(max_length=200)
     description = models.TextField()
-    customer_selection = models.BooleanField(default=False, null=True, blank=True)
+    customer_selection = models.BooleanField(default=False, null=True,
+                                             blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
