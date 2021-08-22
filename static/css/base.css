@@ -199,16 +199,16 @@ input[name='q']::placeholder {
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; 
-    border: 1px solid black;
+    background: #fffbff;
+    color: #3b3b3b !important; 
+    border: 1px solid #3b3b3b;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
-    color: white !important;
+    background: #3b3b3b;
+    color: #fffbff !important;
 }
 
 .info-container,
