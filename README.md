@@ -273,6 +273,19 @@ Text
 
 Text
 
+**Products databse bug**
+* **Non of the uploaded product will show**
+
+Text
+
+* **Fix**
+
+Text
+
+* **Verdict**
+
+Text
+
 [Back to top](#table-of-content)
 
 
