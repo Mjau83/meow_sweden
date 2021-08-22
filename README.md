@@ -298,12 +298,16 @@ I used [Github](https://github.com/) to create the Meow Sweden project, [Gitpod]
 ### Local Deployment
 1. In the rrepository, click the "code" button with a small arrow and download the zip with the code. You can also clone the repository your terminal printing:
 
-```git clone https://github.com/Mjau83/meow_sweden.git```
+```
+git clone https://github.com/Mjau83/meow_sweden.git
+```
 
 
 2. To install the applications print the following in the terminal
 
-```pip3 install -r requirements.txt```
+```
+pip3 install -r requirements.txt
+```
 
 3. At root level in the project, create a file called env.py and make sure it's added to your .gitignore file. The file should contain:
 
@@ -312,7 +316,7 @@ os.environ["STRIPE_WH_SECRET"] = "YOUR_STRIPE_WH_SECRET"
 os.environ['DEVELOPMENT'] = '1'
 os.environ['DATABASE_URL'] = 'YOUR_postgres_KEY'
 ```
-4. In the Gitpod dashboardm go to Settings > Variable and create new envorimental variables for 
+4. In the Gitpod dashboard go to Settings > Variable and create new envorimental variables for 
 
 * STRIPE_PUBLIC_KEY
 * STRIPE_SECRET_KEY
@@ -321,14 +325,151 @@ os.environ['DATABASE_URL'] = 'YOUR_postgres_KEY'
 Public and Secret key can be used for many projects, but WH Secret for the webhook needs to be set for this specific project. Go to the [Stripe documentataion](https://stripe.com/docs/keys) about API Keys to find out more.
 
 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+5. Migrate the database model by printing
 
-![Deployment Image]()
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+6. Create a superuser and set up the credentials by using
+
+```
+python3 manage.py createsuperuser
+```
+
+To login with the superuser and access the django admin add */admin* at the end of the URL in the browser when you run the project
+
+
+7. To run the project in the browser print
+```
+python manage.py runserver
+```
+
+### Heroku Deployment
+1. Login to your Heroku account and create a new app. Choose your region.
+2. Once the app is created go to the *Resources* tab and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project. Select *Hobby Dev - Free plan* and click 'Submit order form'
+3. Click on the *Settings* tab. Scroll down and click "Reveal config vars". 
+![Heroku Config image](wireframes/heroku-config.png)
+Here you can set up the same variables as in your env.py. DON'T set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. Set up the following variables:
+
+```
+AWS_ACCESS_KEY_ID = "YOUR_AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY = "YOUR_AWS_SECRET_ACCESS_KEY"
+
+DATABASE_URL = "YOUR_postgres_KEY" (This variable is automatically set when adding Postgres)
+
+EMAIL_HOST = "yourmail@gmail.com"
+EMAIL_HOST_PASS = "YOUR_EMAIL_HOST_PASS"
+
+SECRET_KEY = "SECRET_KEY"
+STRIPE_PUBLIC_KEY = "YOUR_STRIPE_PUBLIC_KEY" (Same as your envorimental variables)
+STRIPE_SECRET_KEY = "YOUR_STRIPE_SECRET_KEY" (Same as your envorimental variables)
+STRIPE_WH_SECRET = "YOUR_STRIPE_WH_SECRET" (Same as your envorimental variables)
+
+USE_AWS = True
+```
+
+4. Copy the value of DATABASE_URL and past it into you env.py
+5. In the project folder meow_sweden open settings.py and set your DATABASES to the following. This will be removed later.
+
+```
+DATABASES = {
+    'default': dj_database_url.parse('YOUR_postgres_KEY'))
+}
+```
+6. To make a migration print these commands
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+7. Create a superuser for the postgres database so that you can have access to the django admin. You will need to log in to the admin page to check the boxes 'Verified and primary" under the Emails section.
+```
+python3 manage.py createsuperuser
+```
+
+8. Load the data from the .json files into the database by using the following this command for each file. Make sure to load the categories first!
+* categories.json
+* products.json
+
+```
+python3 manage.py loaddata <name of .json file >
+```
+
+9. After migrations and loading data, change database configurations in settings.py to:
+
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    print("SQLite")
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+```
+### To allow your site to use Postgres and sqlite3 in development and deployment
+1. Make sure the requirements.txt is up to date and that you have created the Procfile.
+
+For requirements:
+```
+pip3 freeze --local > requirements.txt
+```
+For Procfile:
+```
+echo web: python app.py > Procfile
+```
+2. In the Procfile add
+
+```
+web: gunicorn <project_name>.wsgi:application
+```
+
+3. To add files and commit them to Github run:
+```
+git add . 
+git commit -m "Your commit message"
+git push
+```
+
+4. Add your Heroku app URL to ALLOWED_HOSTS in your settings.py file
+```
+ALLOWED_HOSTS = ['your-app-name.herokuapp.com', 'localhost']
+```
+
+5. In HEROKU and click the *Deploy* tab in the navigation, scroll down and select Github
+6. Search for your repoitory and click Connect
+7. Under automatic deploys, click 'Enable automatic deploys'
+8. When the build is completed, click "view app" to open it
+9. To commit your changes to the branch, use *git push* to push your changes
+10. Your static files and media files will be stored on AWS. To find more information about this go to [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) 
+11. To set up the email service for confirmation/varification Gmail is used. Go to your gmail account and go to *Settings* (gear icon in the top right)
+12. Go to Accounts and Imports tab and click on Google account settings, then go Security
+13. Scroll down to "Signing in to Google" and turn on 2-step varification
+14. This creates a app password that you can add in the Heroku config variables
+
+* EMAIL_HOST_USER = 'yourmail@gmail.com'
+* EMAIL_HOST_PASS = 'YOUR_EMAIL_HOST_PASS' (The password you just got)
+
+15. In settings.py add the following: 
+```
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'your_default_mail@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+```
 
 [Back to top](#table-of-content)
 
