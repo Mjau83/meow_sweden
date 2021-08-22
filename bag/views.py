@@ -20,6 +20,9 @@ def add_to_bag(request, item_id):
     color = None
     if 'catear_color' in request.POST:
         color = request.POST['catear_color']
+    if 'quipu_color_choise ' in request.POST:
+        color = request.POST['quipu_color_choise']
+    
     bag = request.session.get('bag', {})
 
     if color:
