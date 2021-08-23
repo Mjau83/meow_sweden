@@ -11,6 +11,7 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """ Creates the order """
     STATUS = (
         ('Pending', 'Pending'),
         ('Production', 'Production'),

@@ -14,11 +14,10 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add selected quantity and color of a product to shopping bag """
 
-    product = get_object_or_404(Product, pk=item_id,
-                                catears_has_colors=color_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    color = None
+    color = request.POST.get('catear_color')
     if 'product_color' in request.POST:
         color = request.POST['color']
 
@@ -26,21 +25,22 @@ def add_to_bag(request, item_id):
     #    color = request.POST['quipu_color_choise']
 
     bag = request.session.get('bag', {})
-
+    print(color)
     if color:
         if item_id in list(bag.keys()):
             if color in bag[item_id]['items_by_color'].keys():
-                bag[item_id]['items_by_color'][color_id] += quantity
+                bag[item_id]['items_by_color'][color] += quantity
                 messages.success(request, f'Updated {color.upper()} '
                                  + '{product.name} quantity to {bag[item_id] '
                                  + '["items_by_color"][color]}')
+                print(bag)
             else:
-                bag[item_id]['items_by_color'][color_id] = quantity
+                bag[item_id]['items_by_color'][color] = quantity
                 messages.success(request, f'Added {color.upper()} '
                                  + '{product.name} to your Shopping Bag')
         else:
-            bag[item_id] = {'items_by_color': {color_id: quantity}}
-            messages.success(request, f'Added {color_id.upper()} '
+            bag[item_id] = {'items_by_color': {color: quantity}}
+            messages.success(request, f'Added {color.upper()} '
                              + '{product.name} to your Shopping Bag')
     else:
         if item_id in list(bag.keys()):
@@ -70,20 +70,23 @@ def adjust_bag_items(request, item_id):
     if color:
         if quantity > 0:
             bag[item_id]['items_by_color'][color] = quantity
-            messages.success(request, f'Updated {color.upper()} '
-                             + '{product.name} quantity to {bag[item_id]["items_by_color"][color]}')
+            messages.success(request, f'Updated {color.upper()} {product.name} \
+                quantity to {bag[item_id]["items_by_color"][color]}')
         else:
             del bag[item_id]['items_by_color'][color]
             if not bag[item_id]['items_by_color']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed {color.upper()} {product.name} from your Shopping Bag')
+            messages.success(request, f'Removed {color.upper()} {product.name} \
+                from your Shopping Bag')
     else:
         if quantity > 0:
             bag[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity \
+                to {bag[item_id]}')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your Shopping Bag')
+            messages.success(request, f'Removed {product.name} from \
+                your Shopping Bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -103,10 +106,12 @@ def remove_bag_items(request, item_id):
             del bag[item_id]['items_by_color'][color]
             if not bag[item_id]['items_by_color']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed {color.upper()} {product.name} from your Shopping Bag')
+            messages.success(request, f'Removed {color.upper()} {product.name} \
+                from your Shopping Bag')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your Shopping Bag')
+            messages.success(request, f'Removed {product.name} from your \
+                Shopping Bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)

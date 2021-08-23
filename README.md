@@ -275,8 +275,21 @@ Text
 
 Text
 
-**Products databse bug**
+**Products database bug**
 * **Non of the uploaded product will show**
+
+Text
+
+* **Fix**
+
+Text
+
+* **Verdict**
+
+Text
+
+**Bag bug**
+* **Selected options won't show in the bag**
 
 Text
 

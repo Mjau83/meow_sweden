@@ -44,7 +44,8 @@ p {
 }
 
 .dropdown-menu a{
-    color: #fde5dd;
+    color: #fde5dd !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dropdown-menu a:hover {

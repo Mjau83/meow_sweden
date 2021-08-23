@@ -17,6 +17,7 @@ class Category(models.Model):
 
 
 class CatEarColor(models.Model):
+    """ Creates color options for cat ears"""
     BLUE = 'BL'
     PINK = 'PN'
     GREEN = 'GR'
@@ -38,6 +39,7 @@ class CatEarColor(models.Model):
 
 
 class QuipuForm(models.Model):
+    """ Creates color options and a name field """
     PEARL_WHITE = 'PW'
     LIGHT_BLUE = 'LB'
     IRIDECENT_PURPLE = 'IP'
@@ -85,6 +87,7 @@ class QuipuForm(models.Model):
 
 
 class Product(models.Model):
+    """ Handles product information """
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
     sku = models.CharField(max_length=200, null=True, blank=True)
@@ -94,7 +97,7 @@ class Product(models.Model):
     catears_has_colors = models.BooleanField(default=False, null=True,
                                              blank=True)
     qupiu_custom_form = models.BooleanField(default=False, null=True,
-                                             blank=True)
+                                            blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
