@@ -252,28 +252,30 @@ You can read all about the testing of this site [Here](TESTING.md)
 **Page content bug**
 * **The main content of the pages is hidden underneith the main nav so the top of the page isn't visable**
 
-Text
-
 * **Fix**
 
-Text
+Added padding-top to the content container for the pages and matched it for media queries.
 
 * **Verdict**
 
-Text
+All content is is now visable on all pages
 
 **Webhook bug**
-* **When trying to send a test webhook from Stripe I get "Bad Request checkout/wh/" printed in the termminal and a 400 http response**
+* **When trying to send a test webhook from Stripe I get "Bad Request checkout/wh/" printed in the terminal and a 400 http response**
 
-Text
 
 * **Fix**
 
-Text
+I needed to edit the enviormental variable for STRIPE_WH_SECRET to target this project specificlay as it was trying to work with other projects as well. After restarting the workspace Gitpod changed the servername from *eu14* to *eu13*. I changed the endppoint UR in Stripe, but it still didn't work. So I created env.py and added the STRIPE_WH_SECRET there, then in settings.py
+```
+if os.path.exists("env.py"):
+    import env
+```
+
 
 * **Verdict**
 
-Text
+The checkout now works as planed. Thank you to tutor Igor for helping me and explaining.
 
 **Products database bug**
 * **Non of the uploaded product will show**
