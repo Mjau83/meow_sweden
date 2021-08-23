@@ -19,15 +19,17 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
 
     color = request.POST.get('catear_color')
-    if 'product_color' in request.POST:
-        color = request.POST['color']
+    # if 'product_color' in request.POST:
+    #     color = request.POST['color']
+    print(color)
 
     custom_color = request.POST.get('quipu_color_choise')
-    if 'product_color' in request.POST:
-        custom_color = request.POST['custom_color']
+    print(custom_color)
+    # if 'product_color' in request.POST:
+    #     custom_color = request.POST['custom_color']
 
     bag = request.session.get('bag', {})
-    print(color)
+    print(list(bag.keys()))
     if color:
         if item_id in list(bag.keys()):
             if color in bag[item_id]['items_by_color'].keys():
@@ -61,6 +63,7 @@ def add_to_bag(request, item_id):
             messages.success(request, f'Added {custom_color.upper()} '
                              + '{product.name} to your Shopping Bag')
     else:
+        print("oops")
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
             messages.success(request, f'Quantity of {product.name} is '

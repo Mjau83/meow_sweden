@@ -22,7 +22,7 @@ def bag_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
-        else:
+        elif isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
             for color, quantity in item_data['items_by_color'].items():
                 total += quantity * product.price
@@ -33,6 +33,8 @@ def bag_contents(request):
                     'product': product,
                     'color': color,
                 })
+        else:
+            product = get_object_or_404(Product, pk=item_id)
             for custom_color, quantity in item_data['items_by_color'].items():
                 total += quantity * product.price
                 product_count += quantity
@@ -42,28 +44,6 @@ def bag_contents(request):
                     'product': product,
                     'custom_color': custom_color,
                 })
-        # elif isinstance(item_data, int):
-        #     product = get_object_or_404(Product, pk=item_id)
-        #     for color, quantity in item_data['items_by_color'].items():
-        #         total += quantity * product.price
-        #         product_count += quantity
-        #         bag_items.append({
-        #             'item_id': item_id,
-        #             'quantity': quantity,
-        #             'product': product,
-        #             'color': color,
-        #         })
-        # else:
-        #     product = get_object_or_404(Product, pk=item_id)
-        #     for custom_color, quantity in item_data['items_by_color'].items():
-        #         total += quantity * product.price
-        #         product_count += quantity
-        #         bag_items.append({
-        #             'item_id': item_id,
-        #             'quantity': quantity,
-        #             'product': product,
-        #             'custom_color': custom_color,
-        #         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)

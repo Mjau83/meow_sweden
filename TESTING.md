@@ -71,38 +71,41 @@ The navigation works as planed
 
 **As a user I want to, be able to search for products**
 
-Text
-
 * Test
 
-Text
+If I try to search for a word in a product titel, like "catears" or "necklace", 
+products with those words in the title shows up. I can also make a search for something like 
+"small" and all products with that word in the description shows up. 
 
 * Result
 
-Text
+The user can search for both words in the title and in the description and products are displayed.
 
 * Verdict 
 
-Text
+The search function works as planned
 
 
 **As a user I want to, see images and information of the product**
 
-
 * Test
 
-Text
+When the Products tab i clicked in the navbar and the user have selected a category or
+all products, the products are displayed. The are shown with a image and a title that gives a short
+description about the product, it tells what category it belongs to and the price is shown. When a product
+is clicked the user gets a description that tells a bit more about the product. A bigger image is shown and 
+it can be open in a new tab for bigger view
 
 * Result
 
-Text
+The products are shown in a clear way for the user. The can get an overview of the products and learn more about
+each item when they are clicked. Images shows the product so that the user knows what it looks like
 
 * Verdict 
 
-Text
+The products are shown as planed
 
 **As a user I want to, able to choose from a selection of colors when I buy some products**
-
 
 * Test
 
