@@ -100,7 +100,7 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a specific product  """
+    """ Superuser can edit a specific product  """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only Admin access.')
         return redirect(reverse('home'))
@@ -130,7 +130,7 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a a specific product """
+    """ Superuser can delete a a specific product """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only Admin access.')
         return redirect(reverse('home'))

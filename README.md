@@ -242,7 +242,7 @@ pushed from Gitpod.
 
 
 ## Testing
-You can read all about the testing of this site [Here](testing.md)
+You can read all about the testing of this site [Here](TESTING.md)
 
 [Back to top](#table-of-content)
 

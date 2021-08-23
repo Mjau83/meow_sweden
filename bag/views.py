@@ -12,7 +12,7 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ Add selected quantity of a product to shopping bag """
+    """ Add selected quantity and color of a product to shopping bag """
 
     product = get_object_or_404(Product, pk=item_id,
                                 catears_has_colors=color_id)
@@ -24,7 +24,7 @@ def add_to_bag(request, item_id):
 
     # if 'quipu_color_choise ' in request.POST:
     #    color = request.POST['quipu_color_choise']
-    
+
     bag = request.session.get('bag', {})
 
     if color:
@@ -45,7 +45,7 @@ def add_to_bag(request, item_id):
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            messages.success(request, f'Quantity of {product.name} is ' 
+            messages.success(request, f'Quantity of {product.name} is '
                              + 'updated to {bag[item_id]}!')
         else:
             bag[item_id] = quantity

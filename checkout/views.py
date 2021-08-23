@@ -17,6 +17,7 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """ Handels stripe payment """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +34,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """ Handles the checkout and saves the info from the order """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -80,6 +82,7 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_bag'))
 
+            """ Saves info to the users profile """
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success',
                             args=[order.order_number]))
@@ -100,7 +103,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
+        """ Prefills the form with the saved info in the profile """
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
