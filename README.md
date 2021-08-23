@@ -15,6 +15,8 @@ For any catlover, male or female (yes, men can be catladies too), that like to l
 **Why am I building it?**
 This project is actually why I got into coding. I started up Meow Sweden in spring 2019 and started selling my cat ears and necklaces on **[Etsy](https://www.etsy.com/se-en/shop/MeowSweden?ref=seller-platform-mcnav)**. But I always felt like Meow Sweden should have its own homepage with it own webshop. And with this project I can finaly dive into how I would like it to be! And I can get full controll over all the design and all the functionallity.
 
+***Brief footnote**
+During the building of this project Gitpod experienced some issues where workspaces where stuck in "Stopped". Due to this issue updates and files were lost several times. As you look through the commits you may find traces of this as files had to be recreated and updated again.
 
 ## Table of Content
 

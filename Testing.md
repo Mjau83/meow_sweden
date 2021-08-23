@@ -20,10 +20,10 @@ The code was tested with:
 
 * Test 1
 
-![Lighthouse test 1](assets/images/lighthouse-test1.png)
+![Lighthouse test 1](.png)
 * Test 2
 
-![Lighthouse test 1](assets/images/lighthouse-test2.png)
+![Lighthouse test 1](.png)
 
 ## User Stories
 
@@ -43,55 +43,33 @@ The code was tested with:
 ## User Stories
 **As a user I want to, be able to browse through the products by category**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
-
 * Test
 
-Text
+When *Products* is clicked in the navbar a dropdown appears and all the product categories are visable. The user also have the option to chose "All products" and all products will be shown. When one product category is picked the name of the category is show at the top of the page. If the user tries to search for a category all products in that category is displayed. The category dropdown is shown when the product link is clicked in the mobile view as well.
 
 * Result
 
-Text
+All categories are show when clicked and display the specific products for that category
 
 * Verdict 
 
-Text
+The functionality for the Categories works as expected
 
 **As a user I want to, be able to easily navigate the website**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
-
 * Test
 
-Text
+Navbar is clearly visable at the top and is fixed so that it's always visable when the page is scrolled. The navbar collapses into a hamburger icon on smaller screens and the likns to the navbar is accessable when it's clicked. In the navbar the user have a clear view of the shopping bag, and when clicked the user can get a view of the item in the bag. The footer at the bottom provides links to the social media accounts. When browsing the products the user can access each item by clicking on it and for there make a purchase. If the user wants to continue shopping a button will take them back to the products, or the user can go to checkout.
 
 * Result
 
-Text
+The links on the page takes the user to all the different pages. The buttons help guiding the user to make their next decision. 
 
 * Verdict 
 
-Text
+The navigation works as planed
 
 **As a user I want to, be able to search for products**
-
-* Plan
-
-Text
-
-* Implementation
 
 Text
 
@@ -110,13 +88,6 @@ Text
 
 **As a user I want to, see images and information of the product**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -132,13 +103,6 @@ Text
 
 **As a user I want to, able to choose from a selection of colors when I buy some products**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -154,13 +118,6 @@ Text
 
 **As a user I want to create a customer profile**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -176,13 +133,6 @@ Text
 
 **As a user I want to be able to log in to that profile, and log out**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -198,13 +148,6 @@ Text
 
 **As a user I want to be able to view my shopping bag with added products and/or edit/delete it**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -220,13 +163,6 @@ Text
 
 **As a user I want to be able to pay for my order with a credit card**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -242,13 +178,6 @@ Text
 
 **As a user I want to recive a confirmation email when I make an order**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -276,14 +205,6 @@ Text
 
 **As a site owner I want to promomte my products to my users**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
-
 * Test
 
 Text
@@ -297,14 +218,6 @@ Text
 Text
 
 **As a site owner I want to be able to see all the orders**
-
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -320,14 +233,6 @@ Text
 
 **As a site owner I want to be able to see all registered users**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
-
 * Test
 
 Text
@@ -341,14 +246,6 @@ Text
 Text
 
 **As a site owner I be able to log in and out of the admin profile**
-
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
@@ -364,14 +261,6 @@ Text
 
 **As a site owner I want o be able to edit and delete products**
 
-* Plan
-
-Text
-
-* Implementation
-
-Text
-
 * Test
 
 Text
@@ -385,14 +274,6 @@ Text
 Text
 
 **As a site owner I want o be able to add new products to the webshop**
-
-* Plan
-
-Text
-
-* Implementation
-
-Text
 
 * Test
 
