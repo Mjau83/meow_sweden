@@ -17,12 +17,14 @@ def add_to_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+
     color = request.POST.get('catear_color')
     if 'product_color' in request.POST:
         color = request.POST['color']
 
-    # if 'quipu_color_choise ' in request.POST:
-    #    color = request.POST['quipu_color_choise']
+    custom_color = request.POST.get('quipu_color_choise')
+    if 'product_color' in request.POST:
+        custom_color = request.POST['custom_color']
 
     bag = request.session.get('bag', {})
     print(color)
@@ -41,6 +43,22 @@ def add_to_bag(request, item_id):
         else:
             bag[item_id] = {'items_by_color': {color: quantity}}
             messages.success(request, f'Added {color.upper()} '
+                             + '{product.name} to your Shopping Bag')
+    if custom_color:
+        if item_id in list(bag.keys()):
+            if custom_color in bag[item_id]['items_by_color'].keys():
+                bag[item_id]['items_by_color'][custom_color] += quantity
+                messages.success(request, f'Updated {custom_color.upper()} '
+                                 + '{product.name} quantity to {bag[item_id] '
+                                 + '["items_by_color"][custom_color]}')
+                print(bag)
+            else:
+                bag[item_id]['items_by_color'][custom_color] = quantity
+                messages.success(request, f'Added {custom_color.upper()} '
+                                 + '{product.name} to your Shopping Bag')
+        else:
+            bag[item_id] = {'items_by_color': {custom_color: quantity}}
+            messages.success(request, f'Added {custom_color.upper()} '
                              + '{product.name} to your Shopping Bag')
     else:
         if item_id in list(bag.keys()):
