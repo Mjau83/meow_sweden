@@ -2,7 +2,7 @@
 
 ## Table of Content
 
-* [**Testing**](#testin)
+* [**Testing**](#testing)
     * [Validators](#validators)
     * [Lighthouse](#lighthouse)
     * [User Stories](#user-stories)
@@ -14,7 +14,6 @@ and desktop view (PC).
 The code was tested with:
 * [W3C Markup Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-* [JSHint](https://jshint.com/)
 
 ## Lighthouse
 
