@@ -52,8 +52,8 @@
                                                 {% else %}
                                     <!--            {% if item.product.qupiu_custom_form %}
                                                     {{ item.QuipuForm|upper}}
-                                                {% else %}
-                                                    N/A -->
+                                                {% else %} -->
+                                                    N/A
                                                 {% endif %}
                                             </p>
                                         </td>
@@ -88,9 +88,9 @@
                                                         {% if item.product.catears_has_colors %}
                                                             <input type="hidden" name="catear_color" value="{{ item.color }}">
                                                         {% endif %}
-                                                        {% if item.product.qupiu_custom_form %}
+                                                <!--       {% if item.product.qupiu_custom_form %}
                                                             <input type="hidden" name="quipu_color_choise" value="{{ item.color }}">
-                                                        {% endif %}
+                                                        {% endif %}  --> 
                                                     </div>
                                                 </div>
                                             </form>

@@ -18,10 +18,11 @@ def add_to_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     color = None
-    if 'catear_color' in request.POST:
-        color = request.POST['catear_color']
-    if 'quipu_color_choise ' in request.POST:
-        color = request.POST['quipu_color_choise']
+    if 'product_color' in request.POST:
+        color = request.POST['color']
+
+    # if 'quipu_color_choise ' in request.POST:
+    #    color = request.POST['quipu_color_choise']
     
     bag = request.session.get('bag', {})
 

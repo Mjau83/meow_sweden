@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">  
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="h-100 index-content">
+    <div class="container-fluid justify-content-center" id="about">
+        <h2 class="text-center">About Meow Sweden<i class="fas fa-award"></i></h2>
+        <div>
+            <p>Meow Sweden is founded me, Mamoni (aka Mjau), and it grew out of my urge to make my creative ideas real, and of course my love for cats ( Hi, my name is Mamoni, and I'm a
+                cat-oholic) and pretty things.
+            </p>
+            <h3>The very beginning</h3>
+            <p>
+                It all really started out with me and my cat-oholic behavior of collecting various types of cat ears and other "cat-ccessouries". 
+                But since I always want to put my own touch on things I soon started to design and make my own cat ears. 
+                To me there's always an occasion when you can put on a pair of cat ears to boost your outfit, let your inner cat loose and bring 
+                some smiles to peoples faces.
+            </p>
+        </div>
+        <div id="best-sellers-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active text-center" data-interval="2600">
+                    <img src="{{ MEDIA_URL }}production-earmaking.jpg" class="d-block w-100 img-fluid" alt="cat-ears">
+                </div>
+                <div class="carousel-item text-center" data-interval="2700">
+                    <img src="{{ MEDIA_URL }}catcon.jpg" class="d-block w-100 img-fluid" alt="necklace">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'includes/delivery-banner.html' %}
+</div>
+{% endblock %}
