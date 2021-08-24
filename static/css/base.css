@@ -137,11 +137,10 @@ p {
 
 /* ------------------ Products page */
 .overlay {
-	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
-	position: fixed;
+	position: relative;
 	background: #fffbff;
 	z-index: -1;
 }
@@ -260,7 +259,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Shopping Bag */
 .bag-container {
     padding-top: 230px;
-    height: 200px;
+    padding-bottom: 10rem;
 }
 
 /* Allauth form formatting */
@@ -325,13 +324,14 @@ input[name='q']::placeholder {
 }
 
 /* -------------------------------- Footer */
-.footer-container {
+#footer-container {
     background-color: #3b3b3b;
     color: #fde5dd;
     margin-right: 20px;
     width: 100%;
     bottom: 0;
     z-index: 10;
+    height: 10rem;
 }
 
 .social-links i {
@@ -441,8 +441,9 @@ input[name='q']::placeholder {
 
     .footer-container {
         padding-top: 25px;
-        padding-bottom: 15px;
+        /*padding-bottom: 15px; */
         text-align: center;
+        height: unset;
     }
 }
 
