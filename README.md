@@ -363,6 +363,7 @@ os.environ["STRIPE_SECRET_KEY"] = "YOUR_STRIPE_SECRET_KEY"
 os.environ["STRIPE_WH_SECRET"] = "YOUR_STRIPE_WH_SECRET"
 os.environ['DEVELOPMENT'] = '1'
 os.environ['DATABASE_URL'] = 'YOUR_postgres_KEY'
+os.environ['EMAIL_HOST_USER'] = 'youremail@mail.com'
 ```
 4. In the Gitpod dashboard go to Settings > Variable and create new envorimental variables for 
 
@@ -406,7 +407,7 @@ AWS_SECRET_ACCESS_KEY = "YOUR_AWS_SECRET_ACCESS_KEY"
 
 DATABASE_URL = "YOUR_postgres_KEY" (This variable is automatically set when adding Postgres)
 
-EMAIL_HOST = "yourmail@gmail.com"
+EMAIL_HOST = "yourmail@mail.com"
 EMAIL_HOST_PASS = "YOUR_EMAIL_HOST_PASS"
 
 SECRET_KEY = "SECRET_KEY"
