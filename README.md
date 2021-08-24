@@ -144,16 +144,29 @@ I used [Draw.io](https://app.diagrams.net/) to make a flowchart so I could get a
 Name | name | CharField | max_length=200
 Friendly Name | friendly_name | CharField | max_length=200, null=True, blank=True
 
+### CatEarColor
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Cat ear color | catear_color | CharField | max_length=2, choices=CATEAR_COLOR, default=BLUE
+
+### QuipuForm
+**Name** | **Database Key** | **Field Type** | **Validation**
+------------ | ------------- | ------------- | -------------
+Quipu color | quipu_color | CharField | max_length=2, choices=QUIPU_COLOR, default=PEARL_WHITE
+Quipu stone pearl | quipu_stone_pearl | CharField | max_length=2, choices=QUPIU_STONE_PEARL, default=LABRADORITE
+Name field | name_field | CharField | max_length=12
+
+
 ### Products
 **Name** | **Database Key** | **Field Type** | **Validation**
 ------------ | ------------- | ------------- | -------------
-Category | category | ForeignKey | null=True, blank=True, on_delete=models.SET_NULL
+Category | category | ForeignKey | 'Category', null=True, blank=True, on_delete=models.SET_NULL
 SKU | sku | CharField | max_length=200, null=True, blank=True
 Name | name | CharField | max_length=200
 Description | description | TextField| 
+Cat ear color option | catear_color_option | ManyToManyField | 'CatEarColor'
 Cat ears has colors| catears_has_colors | BooleanField | default=False, null=True, blank=True
-Quipu color| quipu_color | BooleanField | default=False, null=True, blank=True
-Quipu stone pearl | quipu_stonepearl | BooleanField | default=False, null=True, blank=True
+Quipu custom form | qupiu_custom_form | BooleanField | default=False, null=True, blank=True
 Price | price | DecimalField | max_digits=6, decimal_places=2
 Image URL | image_url | URLField | max_length=1024, null=True, blank=True
 Image | image | ImageField| null=True, blank=True
@@ -342,6 +355,8 @@ pip3 install -r requirements.txt
 3. At root level in the project, create a file called env.py and make sure it's added to your .gitignore file. The file should contain:
 
 ```
+os.environ["STRIPE_PUBLIC_KEY"] = "YOUR_STRIPE_PUBLIC_KEY"
+os.environ["STRIPE_SECRET_KEY"] = "YOUR_STRIPE_SECRET_KEY"
 os.environ["STRIPE_WH_SECRET"] = "YOUR_STRIPE_WH_SECRET"
 os.environ['DEVELOPMENT'] = '1'
 os.environ['DATABASE_URL'] = 'YOUR_postgres_KEY'
@@ -380,7 +395,7 @@ python manage.py runserver
 2. Once the app is created go to the *Resources* tab and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project. Select *Hobby Dev - Free plan* and click 'Submit order form'
 3. Click on the *Settings* tab. Scroll down and click "Reveal config vars". 
 ![Heroku Config image](wireframes/heroku-config.png)
-Here you can set up the same variables as in your env.py. DON'T set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. Set up the following variables:
+Here you can set up the same variables as in your env.py. DON'T set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. Set up the following variables in **Heroku** :
 
 ```
 AWS_ACCESS_KEY_ID = "YOUR_AWS_ACCESS_KEY_ID"

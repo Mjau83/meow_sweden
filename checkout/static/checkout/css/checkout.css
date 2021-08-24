@@ -1,5 +1,5 @@
 .checkout-container {
-    padding-top: 300px;
+    padding-top: 230px;
 }
 
 .fieldset-label {
@@ -76,4 +76,8 @@ select option[value=""] {
 }
 /* -------------------------------- Media Queries */
 @media (min-width: 992px) {}
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .checkout-container {
+        padding-top: 50px;
+    }
+}

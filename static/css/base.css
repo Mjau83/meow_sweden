@@ -271,8 +271,9 @@ input[name='q']::placeholder {
 }
 
 /* -------------------------------- Shopping Bag */
+
 .bag-container {
-    padding-top: 230px;
+    padding-top: 240px;
     padding-bottom: 10rem;
 }
 
@@ -337,6 +338,9 @@ input[name='q']::placeholder {
     padding-top: 40px;
 }
 
+..checkout-container {
+    padding-top: 230px;
+}
 /* -------------------------------- Footer */
 #footer-container {
     background-color: #3b3b3b;
@@ -451,8 +455,10 @@ input[name='q']::placeholder {
         padding-top: 10px;
     }
 
+    .checkout-container,
     .bag-container {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     .logout-container,
