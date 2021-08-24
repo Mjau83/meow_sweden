@@ -338,7 +338,7 @@ input[name='q']::placeholder {
     padding-top: 40px;
 }
 
-..checkout-container {
+.checkout-container {
     padding-top: 230px;
 }
 /* -------------------------------- Footer */

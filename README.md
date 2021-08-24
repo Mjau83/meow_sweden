@@ -175,6 +175,8 @@ Image | image | ImageField| null=True, blank=True
 **Name** | **Database Key** | **Field Type** | **Validation**
 ------------ | ------------- | ------------- | -------------
 Order Number | order_number | CharField | max_length=32, null=False, editable=False
+Status | status | CharField | max_length=20, null=True, choices=STATUS, default='Pending'
+User profile | user_profile | ForeignKey | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
 Full Name | full_name | CharField | max_length=50, null=False, blank=False
 Email | email | EmailField | max_length=254, null=False, blank=False
 Street Address 1 | street_address1 | CharField | max_length=80, null=False, blank=False
@@ -195,6 +197,7 @@ Stripe PayID | stripe_pid | CharField | max_length=254, null=False, blank=False,
 Order | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
 Product | product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE
 Catear Color | catear_color | CharField | max_length=20, null=True, blank=True 
+Quipu color choise | quipu_color_choise | CharField | max_length=100, null=True, blank=True
 Quantity | quantity | IntegerField | null=False, blank=False, default=0
 Lineitem Total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
