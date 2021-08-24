@@ -8,7 +8,7 @@
     * [User Stories](#user-stories)
     * [Site Owner Goals](#site-owner-goals) 
 
-?? The was tested for Android on Samsung A50 and Xperia 10. It was also tested on laptop
+The was tested for Android on Samsung A50 and Xperia 10. It was also tested on laptop
 and desktop view (PC).
 ## Validators
 The code was tested with:
@@ -84,7 +84,6 @@ The user can search for both words in the title and in the description and produ
 
 The search function works as planned
 
-
 **As a user I want to, see images and information of the product**
 
 * Test
@@ -108,18 +107,18 @@ The products are shown as planed
 
 * Test
 
-Text
+When clicking on some of the catears to view the product info a dropdown with color option is displayed. 
+The user can chose from a couple of colors and select the one they like. When the product is added to the bag the chosen color is also added so that the user can see the color of the product they have chosen. When going to checkout the chosen color is visable and it's added to the order and can be viewd when the admin user is looking at the order
 
 * Result
 
-Text
+The user can easily pick the prefered color if a product offers that option. The user can see the cosen color throughout the whole process of making a purchase
 
 * Verdict 
 
-Text
+The dropdown for color opions works as planned 
 
 **As a user I want to create a customer profile**
-
 
 * Test
 
