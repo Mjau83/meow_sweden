@@ -33,17 +33,6 @@ def bag_contents(request):
                     'product': product,
                     'color': color,
                 })
-    #    else:
-    #       product = get_object_or_404(Product, pk=item_id)
-    #       for custom_color, quantity in item_data['items_by_color'].items():
-    #           total += quantity * product.price
-    #           product_count += quantity
-    #           bag_items.append({
-    #               'item_id': item_id,
-    #               'quantity': quantity,
-    #               'product': product,
-    #               'custom_color': custom_color,
-    #           })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
