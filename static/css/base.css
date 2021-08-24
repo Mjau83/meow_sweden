@@ -231,8 +231,16 @@ input[name='q']::placeholder {
 .info-container,
 .profile-container,
 .add-product-container,
-.success-container {
+.success-container,
+.logout-container,
+.signup-container {
     padding-top: 230px;
+}
+
+.logout-container,
+.signup-container  {
+    text-align: center;
+    padding-bottom: 200px;
 }
 
 .meow-card {
@@ -438,12 +446,20 @@ input[name='q']::placeholder {
     .about-content,
     .info-container,
     .profile-container,
-    .add-product-container {
+    .add-product-container,
+    .allauth-col-container {
         padding-top: 10px;
     }
 
     .bag-container {
         padding-top: 100px;
+    }
+
+    .logout-container,
+    .signup-container {
+        padding-top: 110px;
+        padding-bottom: 250px;
+        
     }
 
     .footer-container {
