@@ -164,7 +164,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'sv-SE'
+# if set to 'sv-SE' the admin and some of the allauth templates will be set to swedish 
+LANGUAGE_CODE = 'en-us' 
 
 TIME_ZONE = 'UTC'
 

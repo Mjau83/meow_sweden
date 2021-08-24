@@ -19,10 +19,10 @@ The code was tested with:
 
 * Test 1
 
-![Lighthouse test 1](.png)
+![Lighthouse test 1](wireframes/lighthouse1.png)
 * Test 2
 
-![Lighthouse test 1](.png)
+![Lighthouse test 2](wireframes/lighthouse2.png)
 
 ## User Stories
 
@@ -204,82 +204,82 @@ Verification mail at registration worked as planned, but not the confirmation em
 
 * Test
 
-Text
+When the user enter the landing home page there's a image slider showing a small selection of products. On the Products page the user can sort how they want the products to be displayed. For example name, price or category, high to low or low too high. 
 
 * Result
 
-Text
+The products can either be shown all of them at ones, or filtered with help of the sort bar at the top of the products page, or by category or searching. 
 
 * Verdict 
 
-Text
+The products are shown as planned
 
 **As a site owner I want to be able to see all the orders**
 
 * Test
 
-Text
+By typing */admin* at the eng of the URL the admin if not ready logged in is taken to the Django admin login page. The admin can log in with hel of the superuser details that were set when the project was created. When logged in the admin can click on "Orders" under the Checkout section to the left on the screen. This displays a list of all orders made. The orders are shown with their unique order number with the most recent order at the top. To view details about a specific order the order number is clicked and all information about what was ordered and the user is displayed. The order can then be set to "Pending/Processing/Shipped" to keep track of it. 
 
 * Result
 
-Text
+As I site owner I am able to get a clear view of all the orders made. I am able to edit and/or delete them, and I can keep track of their status to make sure nothing is missed out.
 
 * Verdict 
 
-Text
+The order admin worked as planned
 
 **As a site owner I want to be able to see all registered users**
 
 * Test
 
-Text
+When logged in to the Django admin I as a site owner can navigate to "Users" to get a list of all the users that is registered. The users are displayed by user name in the list, and when clicked more detailed information is shown. It is also posible to see when the user registered and was last logged in.
 
 * Result
 
-Text
+All the users are listed and information about each user can be accessed
 
 * Verdict 
 
-Text
+The access to the users worked as planned
 
 **As a site owner I be able to log in and out of the admin profile**
 
 * Test
 
-Text
+The admin user can either use the same log out method as the customer users, by clicking on the Paw and chose Log out. If the admin is in the Django admin there's a Log out link in the top right corner of the page. That way the admin user can exit the admin view
 
 * Result
 
-Text
+There's two ways of logging out from the admin, both are working
 
 * Verdict 
 
-Text
+Logging out worked as planned
 
 **As a site owner I want o be able to edit and delete products**
 
 * Test
 
-Text
+When a product is displayed there's two options at the bottom of each item. The options "Edit product" and "Delete product" is visable both when many products are shown and in the product info view. When Edit is clicked is opens a *Product Admin* that makes it possible to edit all the fields of the product. When a product is edited a notification popps up to confirm that all went well. If Delete is clicked the product is deleted and a notificaton popps up to confirm that it's done.
 
 * Result
 
-Text
+It is easy as a site owner to access the product admin to edit/update a product. It is also easy to delete a product if it shouldn't be in stock any more.
 
 * Verdict 
 
-Text
+The edit and delete functions worked as planned
 
 **As a site owner I want o be able to add new products to the webshop**
 
 * Test
 
-Text
+By clicking on the Paw and then clicking on *Product Managment* the site owner can add a new product to a form. The category is selected from a dropdown field, product information is added to the form and a image can be uploaded. The new product is displayed with the rest of the products on the page.
 
 * Result
 
-Text
+In Product Management it is easy to fill out the field with the product information. The image is esay to upload from the computer.
 
 * Verdict 
 
-Text
+The adding of a new product worked as planned

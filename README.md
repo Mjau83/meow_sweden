@@ -2,8 +2,8 @@
 ### Handmade accessories and jewelry with cattitude =^.^=
 
 
-![Responsive Image](assets/images/responsive-image.png)
 
+![Responsive Image](wireframes/responsive-image.png)
 
 ## Project Goals
 **What is it?** 
