@@ -39,6 +39,11 @@ p {
     width: 100%;
 }
 
+.nav-item {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .dropdown-menu {
     background-color: #000;
 }
@@ -142,7 +147,7 @@ p {
 	left: 0;
 	position: relative;
 	background: #fffbff;
-	z-index: -1;
+/*	z-index: -1; */
 }
 
 .title-header {
@@ -224,6 +229,7 @@ input[name='q']::placeholder {
 }
 
 .info-container,
+.profile-container,
 .add-product-container,
 .success-container {
     padding-top: 230px;
@@ -331,7 +337,7 @@ input[name='q']::placeholder {
     width: 100%;
     bottom: 0;
     z-index: 10;
-    height: 10rem;
+    height: 13rem;
 }
 
 .social-links i {
@@ -431,6 +437,7 @@ input[name='q']::placeholder {
 
     .about-content,
     .info-container,
+    .profile-container,
     .add-product-container {
         padding-top: 10px;
     }
@@ -441,9 +448,16 @@ input[name='q']::placeholder {
 
     .footer-container {
         padding-top: 25px;
-        /*padding-bottom: 15px; */
         text-align: center;
-        height: unset;
+        height: 13rem;
+    }
+
+    .social-col {
+        padding-top: 10px;
+    }
+
+    .shipping-col {
+        padding-bottom: 12px;
     }
 }
 
@@ -462,4 +476,9 @@ input[name='q']::placeholder {
     #delivery-banner {
         font-size: 0.5rem;
     }
+
+    .footer-wrapper{
+        text-align: center;
+    }
+
 }
