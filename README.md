@@ -1,8 +1,6 @@
 # Meow Sweden
 ### Handmade accessories and jewelry with cattitude =^.^=
 
-
-
 ![Responsive Image](wireframes/responsive-image.png)
 
 ## Project Goals
@@ -215,6 +213,7 @@ Country | default_country | CountryField | blank_label='Country *', null=True, b
 * Responsive on different devices
 * Registration and log in for Customer Users
 * Possability to edit Customer profile and view order history when logged in
+* Possability to store previous orders
 * Browse products by category
 * Possability for Admin User to add, edit and delete products when logged in
 
@@ -247,7 +246,6 @@ the project
 * [Gimp](https://www.gimp.org/) was used to edit photos.
 * [Favicon.cc](https://www.favicon.cc/) was used to create the fave icon
 * [Webformatter](https://webformatter.com/html) was used to beautify the code
-??* [Copressor.io](https://compressor.io/) was used to compress the background image
 * [Heroku](https://id.heroku.com/login) was used to deploy and host the site
 * [Gitpod](https://gitpod.io/) was used for coding the project
 * [Github](https://github.com/) was used to save and stored on the project after being 
@@ -296,36 +294,25 @@ The checkout now works as planed. Thank you to tutor Igor for helping me and exp
 **Products database bug**
 * **Non of the uploaded product will show**
 
-Text
-
 * **Fix**
 
-Text
+After much time spent with the incredable people on Tutor Support, them being in my workspace trying to help me out, I honestly can't remeber everything we did to try to fix this. We ended up deleteing the entire database so that I could start over again and upload the .json again
 
 * **Verdict**
 
-Text
+The products are now visable on the site again.
 
-**Bag bug**
-* **Selected options won't show in the bag**
-
-Text
-
-* **Fix**
-
-Text
-
-* **Verdict**
-
-Text
 
 [Back to top](#table-of-content)
 
 
 ## To Do
-* 
-* 
-* 
+* *Make it possible to add multible selections to the Shopping bag.* It turned out to be to advanced for me to get the two selected colors and a name/word to be added to the bag then showed in the order in the Django admin. I had to settle with only one of the colors for the Personalized Quipu necklace being displayed to the user and saved in the order
+* *Image slider in the product info*. I would love to have more then one product image for each product.
+* *Fix footer*. Fix the footer in the Profile page so that it expands to full width
+* *Fix order confirmation mail*. Fix it the the customer user getts the order confirmation on the email
+* *Fix links to About and Home in the navbar*. I just couldn't figure it out...
+
 
 [Back to top](#table-of-content)
 
@@ -525,13 +512,13 @@ else:
 ## Credits
 #### Inspiration 
 * [Dennis Ivy](https://www.youtube.com/watch?v=xv_bwpA_aEA&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO )
-* [ ]( )
+* Code Institues's mini project *Boutique Ado*
 
-* Many thanks to the awsome people at Tutor Support. Especally **Igor Basuga** and **Seán Murphy**. They both went  far and beyond when I needed it the most. They helped me get back on track, took their time explaining and showed a great amount of patinece. I truly, truly appreciate it.
-* A huge thank you to my mentor **Simen Eventyret_mentor** for all the good advices, feedback 
+* Many thanks to the awsome people at Code Institue's Tutor Support. Especally **Jo**, **Igor Basuga** and **Seán Murphy**. They both went far and beyond when I needed it the most. They helped me get back on track, took their time explaining and showed a great amount of patinece. I truly, truly appreciate it.
+* A huge thank you to my mentor **[Simen Eventyret_mentor](https://github.com/Eventyret)** for all the good advices, feedback 
 and for challangeing me to always do better.
 * Thank you to my older brother **David** who’s been a wonderful support and helped me with testing and good advices.
-* Thank you to my friend **Christoffer Nicklasson**, who helped me answering questions and come up with solutions.
+* Thank you to my friend **Christoffer Nicklasson**, who helped me answering questions and come up with idea for solutions.
 
 
 [Back to top](#table-of-content)
