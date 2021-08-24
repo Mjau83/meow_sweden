@@ -122,75 +122,71 @@ The dropdown for color opions works as planned
 
 * Test
 
-Text
+By navigating to the *Profile* Paw button the user can either Sign in if the user is already registerd. If not, the user can click on "Register" to fill out the form. A verification email is sent to the given email address and the user gets a link that needs to be clicked to verify the registration. When the verification is done the user can log in and fill out the address form which will be saved for future orders. When a order is made it is saved in the profile so that the user can go back and view it.
 
 * Result
 
-Text
+When the user register a email is sent and the verification can be completed. When the profile is updated a notation popps up to notify that updates have been made. When a order is done it gets added to the profile.
 
 * Verdict 
 
-Text
+The user registration and and storing of user information and orders in the user profile works as planned
 
 **As a user I want to be able to log in to that profile, and log out**
 
-
 * Test
 
-Text
+After the user have regitered and recived the verification email, the user uses the user name and the password given at registration to log in. To log out the user the user clicks on the Paw and choses "Log out" in the dropdown menu. A notification is shown asking the user if they are sure they want to log out. Clicking Log out takes the user to the home landing page of the site and a noticifation popps up to tell them that they have logged out.
 
 * Result
 
-Text
+The for to log in is simple and straight forward. After logging the user can access the user profile and logging out is just as simple as logging in. Notifications are shown when either are done and makes everything extra clear.
 
 * Verdict 
 
-Text
+Logging in and out worked as planned. 
 
 **As a user I want to be able to view my shopping bag with added products and/or edit/delete it**
 
-
 * Test
 
-Text
+When the user have added products to the shopping bag they can click on the Bag icon in the top right corner. When a product is added the price adds to the total amount. In the shopping bag view the user can see every product, quantity, and if there's a color option they can see what color they picked. Ther's also a possibility to edit the quantity och an item or remove it completly from the bag. When either of them is done a notification popps up to tell the user what has been done. In the bag view the user have to option to Keep shopping or proceed to Checkout
 
 * Result
 
-Text
+The shopping bag gives a clear view of all the items added into the bag. It is easy for the user to update the quantity or remove an item from the bsg. When either of them is done the total amount updates accordingly.
 
 * Verdict 
 
-Text
+The shopping bag funtionallity worked as planned
 
 **As a user I want to be able to pay for my order with a credit card**
 
-
 * Test
 
-Text
+When the user clicks on Checkout in the Shoppping bag view they can see a summary of the order. If the user is logged in and have save their address the address is prefilled and the card details is the only thing that needs to be filled out. Before completeing the order the user have the option to adjust the bag if they want to change something. When the order is completed a summary is shown with a uniqu order number, all the items, total price and address.  A confirmation mail is sent with the order information.
 
 * Result
 
-Text
+The prefilled user information is in the order form if the user is logged in and it's easy to for the user just to fill out the card details and complete the order. A suammry of the order is shown and it geta adde to the order history in the profile. The payment is registered as "Succeeded" on Stripe payments
 
 * Verdict 
 
-Text
+The card payment worked as planned
 
 **As a user I want to recive a confirmation email when I make an order**
 
-
 * Test
 
-Text
+A temporary email address from [Temp Mail](https://temp-mail.org/) was used to create and registrating a test user. When registration was done a verification email was sent to the temporary email and the registration could be completed. After completeing a order however no confirmation email was recived.  
 
 * Result
 
-Text
+At the time of writing this however, no orderbconfirmation mail seem to hav been sent to the temporary test email. 
 
 * Verdict 
 
-Text
+Verification mail at registration worked as planned, but not the confirmation email
 
 
 ## Site Owner Goals
